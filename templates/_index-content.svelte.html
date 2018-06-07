@@ -1,0 +1,38 @@
+
+
+
+<!-- Screen reader announcements -->
+<div aria-live="polite" id="announcer" class="sr-only"></div>
+
+<!-- Skip to main content -->
+<a href="#main-content" class="to-main-content">Skip to main content</a>
+
+<!-- Header -->
+<header class="project-header" role="banner">
+  <div class="container-lg">
+    <h1>{ content.title }</h1>
+  </div>
+</header>
+
+<!-- Main content here -->
+<main id="main-content" class="content" role="main">
+  <div class="container-lg">
+    <p>Main content here.</p>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer role="contentinfo">
+  <div class="container-lg">
+    <p>Footer content</p>
+  </div>
+</footer>
+
+
+<script>
+export default {
+  oncreate: function() {
+    console.log('created');
+  }
+};
+</script>
