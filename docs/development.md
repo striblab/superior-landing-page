@@ -52,7 +52,7 @@ Depending on what libraries or dependencies you need to include there are a few 
       import awesome from "awesome-lib";
       awesome.radical();
       ```
-  * For dependencies that are very common and are available through a trusted CDN, you can include it in `config.json`. Consider using the [StribLab static libs CDN](https://github.com/striblab/static-libs).
+  * For dependencies that are very common and are available through a trusted CDN, you can include it in `config.json`. Consider using the [StribLab static libs CDN](https://github.com/striblab/static-libs). For CMS integration, these scripts should be included in the `script libraries` in the LCD
     * For instance:
       ```js
       "js": {
@@ -80,7 +80,7 @@ Depending on what libraries or dependencies you need to include there are a few 
       ```css
       @import "normalize-scss/sass/_normalize.scss";
       ```
-  * For dependencies that are very common and are available through a trusted CDN, you can include it in `config.json`. Consider using the [StribLab static libs CDN](https://github.com/striblab/static-libs).
+  * For dependencies that are very common and are available through a trusted CDN, you can include it in `config.json`. Consider using the [StribLab static libs CDN](https://github.com/striblab/static-libs). For CMS integration, these scripts should be included in the `style libraries` in the LCD
     * For instance:
       ```js
       "css": {

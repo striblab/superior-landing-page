@@ -9,8 +9,8 @@
 // Utility functions, such as Pym integration, number formatting,
 // and device checking
 
-import utilsFn from './utils.js';
-utilsFn({ });
+//import utilsFn from './utils.js';
+//utilsFn({ });
 
 
 // Import local ES6 modules like this:
