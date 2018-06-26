@@ -1,0 +1,33 @@
+/**
+ * Project specific styling.
+ */
+
+.teases {
+  width: 100%;
+  max-width:800px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin:0 auto;
+
+
+  article.tease {
+    display:table;
+    width: 238px;
+    height: 200px; 
+    &:before {
+      display: none;
+    }
+
+    header {font-weight:normal;}
+    .tease-timestamp {display:none;}
+    .tease-photo {
+      width: 100%;
+    }
+    h1>a {
+      font-family: Popular, Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+    }
+  }
+}

@@ -22,8 +22,11 @@ $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 @import '@striblab/strib-styles/source/styles/default-wrapper.scss';
 
 // Project specific styles.  Split styles into files per component
-#{$selector-wrapper} {
+#{$selector-wrapper} 
+{
   // Split your styles into multiple files so its easier to understand and change
   @import 'project';
+  @import 'teases';
+  @import 'topNav';
 }
 
