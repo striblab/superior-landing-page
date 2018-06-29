@@ -1,3 +1,63 @@
 /**
  * Project specific styling.
  */
+
+& {
+  -webkit-font-smoothing: antialiased
+}
+
+aside {
+  margin-top: 1em;
+}
+
+
+
+.summaryBlock {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  .summaryText {
+    @include font-styles('poynter-serif'); // poynter serif 16/22;
+    text-align: justify;
+    float: left;
+    width: 624px;
+    padding-bottom: 5em;
+  }
+  .summaryBlockReefers {
+    h4 {
+      line-height: 1em;
+    }
+    float: right;
+    width: 135px;
+    font-size: .81em;
+    line-height:1em;
+    .galleryReefer,
+    .galleryBios {
+      border-top: 1px solid #333;
+      margin-top: .7em;
+      padding-top: .7em;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  font-size: 5.438em;
+  padding: 0;
+  margin: 0 0 .08em 0;
+  line-height: 1em;
+}
+
+.byline {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  address {
+    font-weight: normal;
+  }
+  a {
+    font-weight: bold;
+  }
+}

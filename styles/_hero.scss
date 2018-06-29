@@ -1,0 +1,88 @@
+// .subnav-strib-site,
+// .nav-strib-site {
+//   display: none;
+// }
+
+#heroVideo {
+  position: relative;
+    left: 0;
+    top: 0;
+    max-width: 100%; 
+    min-height: 600px;
+}
+
+.topNavBar {
+  z-index: 200;
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.25) 60%, rgba(0, 0, 0, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.25) 60%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.25) 60%, rgba(0, 0, 0, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+
+  .strib {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 200px;
+    height: 33px;
+    background-image: url(http://static.startribune.com/preview/stadium/img/strib-logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .sponsor {
+    display: none;
+  }
+}
+
+
+.hero {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  margin-bottom: 2.5em; 
+  margin-top: 0;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  opacity: 0;
+  animation: introFade 3s 2s ease-out forwards;
+  padding: 0;
+  .title-card {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 18px;
+    z-index: 201;
+    h1 {
+      text-transform: uppercase; // padding-right: 12px;
+      display: inline-block;
+      letter-spacing: 2px;
+      @include font-styles('popular');
+      font-weight: bold;
+      line-height: 86%;
+      font-size: 1.5em;
+      color: #fff;
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
+    }
+  }
+}
+
+section.mobile-hero {
+  display: none;
+}
+
+@keyframes introFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+

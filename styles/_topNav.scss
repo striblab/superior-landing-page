@@ -1,74 +1,203 @@
-.subnav-strib-site,
-.nav-strib-site {
-  display: none;
-}
-video {
-   margin-top: -60px;
-}
-.topNavBar {
-  z-index: 200;
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  .strib {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    width: 200px;
-    height: 33px;
-    background-image: url(http://static.startribune.com/preview/stadium/img/strib-logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .sponsor {
-    background-image: url(http://stmedia.startribune.com/images/sponsors_Text4.png);
-    height: 103px;
-    display:none;
-  }
+
+// .topNavBar {
+//   z-index: 200;
+//   width: 100%;
+//   height: 80px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   .strib {
+//     position: absolute;
+//     top: 12px;
+//     left: 12px;
+//     width: 200px;
+//     height: 33px;
+//     background-image: url(http://static.startribune.com/preview/stadium/img/strib-logo.png);
+//     background-size: contain;
+//     background-repeat: no-repeat;
+//   }
+//   .sponsor {
+//     display: none;
+//   }
+// }
+.page-article{padding-top:0}
+.wide-body .l-article-container {
+  margin: 0 auto;
+  text-align:center;
 }
 
-.hero {
-  overflow: hidden;
-  position: relative;
-  height: 80vh;
-  margin-bottom: 3em;
-  margin-top: -2px;
-  background-position: top left;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #000;
-  opacity: 1;
-  animation: introFade 3s 2s ease-out forwards;
-  .title-card {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    top: 18px;
-    z-index: 100;
-    h1 {
-      text-transform: uppercase;
-      // padding-right: 12px;
-      display: inline-block;
-      letter-spacing: 2.5px;
-      font-family: "Popular", Helvetica, Arial, sans-serif;
-      font-weight: bold;
-      line-height: 86%;
-      font-size: 1.5em;
-      color: #fff;
-      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
-    }
-  }
-}
-section.mobile-hero {
-    display: none;
-}
-@keyframes introFade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+// .nav {background-color:transparent;}
+
+//     .nav-logo a {
+//         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-nav-shortnav-logo-160-25.png) !important;
+//         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-nav-shortnav-logo-160-25.svg) !important;
+//         background-color: transparent;
+//         color: #444 !important;
+//     }
+//     .nav ul {
+//         background: transparent;
+//         background-color: transparent;
+//     }
+//     .nav a.project-title {
+//         background-color: transparent;
+//         color: #444;
+//     }
+//     .nav .nav-logo {
+//         background-color: transparent;
+//     }
+//     .project-title {
+//         cursor: default;
+//     }
+//     .nav-block.share, .nav-block.comment {
+//      display:none;
+//     }
+//     .nav a {
+//         border-left-color: #ccc;
+//         background-color: transparent;
+//     }
+//     a.icn-comment,
+//     a:hover.icn-comment {
+//         // background-image: url(/static/img/icons/icn-project-nav-comment-black.png);
+//         // background-image: url(/static/img/icons/icn-project-nav-comment-black.svg);
+//         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-project-nav-comment-black.png);
+//         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-project-nav-comment-black.svg);
+//         background-color: #fff;
+//     }
+//     a.icn-share,
+//     a:hover.icn-share {
+//         // background-image: url(/static/img/icons/icn-project-nav-share-black.png);
+//         // background-image: url(/static/img/icons/icn-project-nav-share-black.svg);
+//         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-project-nav-share-black.png);
+//         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-project-nav-share-black.svg);
+//         background-color: #fff;
+//     }
+//     .nav li ul li.clickQS a {
+//         border-color: #ccc;
+//         border-left: solid 1px #ccc;
+//         color: #444;
+//     }
+//     .nav li ul li.clickQS a:hover {
+//         border-color: transparent;
+//         color: #fff;
+//     }
+//     .nav li ul li.share__email.clickQS a {
+//         border-bottom: none;
+//     }
+//     .nav .share-more-label {
+//         color: #444;
+//     }
+//     .nav li ul.project-nav {
+//         border: solid 1px #ccc;
+//     }
+//     .nav li ul.project-nav {
+//         border-bottom: none;
+//         border-top: none;
+//     }
+//     .nav li ul.project-nav li {
+//         display: none;
+//     }
+//     .nav li ul.project-nav li.mobile-menu {
+//         display: block;
+//     }
+//     .nav li ul.project-nav li.mobile-menu a {
+//         border-color: #ccc;
+//         color: #444;
+//     }
+//     .nav li ul.project-nav li.mobile-menu a:hover {
+//         border-color: transparent;
+//         color: #fff;
+//     }
+//     .nav-indicator {
+//         font-size: 0;
+//         color: #fff;
+//     }
+//     .nav-title .nav-indicator .arrow-down {
+//         right: 80px;
+//     }
+//     .nav li ul li.share-more-group {
+//         border: solid 1px #ccc;
+//         border-width: 0 0 1px 0;
+//     }
+//     .nav-block.share {
+//         display: none;
+//     }
+//     .nav-block.share.closed ul {
+//         display: none;
+//     }
+//     .project-nav {
+//         display: none;
+//     }
+//     .project-nav.open {
+//         display: block;
+//     }
+    // @include media(">tablet") {
+    //     .nav li ul.project-nav li {
+    //         height: 0 !important;
+    //     }
+    //     .nav-indicator .day,
+    //     .project-title .nav-indicator {
+    //         display: none;
+    //     }
+    //     .project-nav {
+    //         display: block !important;
+    //         cursor: default;
+    //     }
+    //     .nav-block.share ul li a,
+    //     .share-more-label {
+    //         color: #444;
+    //     }
+    //     .nav-block.share ul {
+    //         border-bottom: solid 1px #ccc;
+    //     }
+    //     .nav li ul li.share-more-group {
+    //         border: solid 1px #ccc;
+    //         border-width: 0 0 0 0;
+    //     }
+    // }
+    // @include media("<tablet") {
+    //     .nav a.project-title, .nav.project-home a.project-title {
+    //         width: 100% !important;
+    //     }
+    //     a.nav-title.project-title {
+    //         background-position: 95% 12px !important;
+    //         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-mobile-menu-black.png);
+    //         background-image: url(http://static.startribune.com/assets/news/mississippi-workflow/img/icn-mobile-menu-black.svg), none;
+    //     }
+    //     .nav li ul li.clickQS {
+    //         display: block;
+    //     }
+    //     .nav li ul li.clickQS a {
+    //         border-left: none;
+    //     }
+    //     ul li.comment {
+    //         border: solid 1px #ccc;
+    //         border-bottom: 1px;
+    //     }
+    //     .share__comments.clickQS.mobile {
+    //         border-bottom: solid 1px #ccc;
+    //     }
+    //     .nav .project-nav,
+    //     .nav .project-nav.open {
+    //         left: 0% !important;
+    //     }
+    //     .nav li ul.project-nav {
+    //         border: none;
+    //     }
+    //     .nav a {
+    //         border: none;
+    //     }
+    // }
+    /* Portrait */
+    
+    // @media only screen and (orientation: landscape) {
+    //     .nav-indicator .day,
+    //     .project-title .nav-indicator {
+    //         display: block;
+    //     }
+    //     .project-nav.open {
+    //         display: block !important;
+    //     }
+    //     .nav li ul.project-nav.open li {
+    //         height: auto !important;
+    //     }
+    // }

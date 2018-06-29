@@ -4,7 +4,6 @@
  * http://sass-lang.com/
  */
 
-
 // Include strib-icons
 $strib-fonts-location: '//static.startribune.com/assets/libs/strib-icons/0.0.10/';
 @import '@striblab/strib-icons/build/strib-icons.scss';
@@ -12,7 +11,6 @@ $strib-fonts-location: '//static.startribune.com/assets/libs/strib-icons/0.0.10/
 
 // Strib styles
 // https://github.com/striblab/strib-styles/blob/master/source/styles/_variables.scss
-
 // Assumed that this project lives within an existing page, so we add a
 // wrapper that is very specific and wrap our other styles in it so
 // that we don't affect other styles on the page.  Note that
@@ -20,13 +18,11 @@ $strib-fonts-location: '//static.startribune.com/assets/libs/strib-icons/0.0.10/
 // rems when it would otherwise.
 $selector-wrapper: '.strib-styles.ssa.ssb.ssc';
 @import '@striblab/strib-styles/source/styles/default-wrapper.scss';
-
+@import 'topNav';
 // Project specific styles.  Split styles into files per component
-#{$selector-wrapper} 
-{
+#{$selector-wrapper} {
   // Split your styles into multiple files so its easier to understand and change
   @import 'project';
+  @import 'hero';
   @import 'teases';
-  @import 'topNav';
 }
-
