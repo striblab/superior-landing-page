@@ -2,13 +2,12 @@
 // .nav-strib-site {
 //   display: none;
 // }
-
 #heroVideo {
   position: relative;
-    left: 0;
-    top: 0;
-    max-width: 100%; 
-    min-height: 600px;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 600px;
 }
 
 .topNavBar {
@@ -43,7 +42,7 @@
   overflow: hidden;
   position: relative;
   height: 100%;
-  margin-bottom: 2.5em; 
+  margin-bottom: 2.5em;
   margin-top: 0;
   background-position: top left;
   background-size: cover;
@@ -70,6 +69,18 @@
       text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
     }
   }
+  &.multimedia {
+    height: 50px;
+    
+  }
+  &.bios {
+    background-image: url(http://stmedia.startribune.com/images/Superior-bios.png);
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    height: 80vh;
+    background-position: center
+  }
 }
 
 section.mobile-hero {
@@ -84,5 +95,3 @@ section.mobile-hero {
     opacity: 1;
   }
 }
-
-

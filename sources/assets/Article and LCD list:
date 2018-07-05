@@ -21,9 +21,10 @@ http://www.startribune.com/owtrail080318/485943601/?preview=1
 Part 6: Fri, Aug 17 Protect and serve: 485943721 : LCD 486474231 486499431
 http://www.startribune.com/owtrail081018/485943721/?preview=1
 
+485934211 Interactive Map LCD 485934531
+486590301 Bios  LCD 487259751
+486590611 galleries LCD 487259461
 
-486590301 Bios
-486590611 galleries
 
 gulp develop --cms --mobile --cms-id=485941911
 gulp develop --cms --cms-id=485941911

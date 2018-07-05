@@ -2,6 +2,25 @@
  * Project specific styling.
  */
 
+.bios {
+  margin-bottom: 4em;
+  border-bottom: 1px solid #222;
+  padding-bottom: 4em;
+  .bio {
+    display: table;
+    margin: 2em 0;
+    img {
+      float: right;
+      padding-left: 2em;
+    }
+    h2 {
+      padding-top: 0;
+    }
+  }
+}
+
+
+
 .teases {
   width: 100%;
   max-width: 800px;
@@ -9,9 +28,52 @@
   flex-flow: row wrap;
   justify-content: space-between;
   margin: 0 auto;
-  &.ads{max-width:970px;
-article.tease{margin:.5em 0;}
-    h4 {border-top:1px #333 solid;width:100%;max-width:800px;margin:2em auto 1em auto;padding:2em 0 0;}}
+  &.multimedia {
+    max-width: 970px;
+    .tease {
+      width: 300px;
+    }
+    .related-media {
+      width: 100%;
+      float: none;
+      margin: .5em 0;
+    }
+    .article-featured-gallery-mod.overline {
+      .stack-label {
+        display: none;
+      }
+      position: relative;
+      right: auto;
+      width: 100%;
+      .gallery-controls-mod {
+        padding: 0 0 10px 0;
+
+        .gallery-next-prev {
+          float: left;
+          width: 50%;
+          text-align: right;
+          
+        }
+        .gallery-view-toggle {
+          float: left;
+          width: 50%;
+        }
+      }
+    }
+  }
+  &.ads {
+    max-width: 970px;
+    article.tease {
+      margin: .5em 0;
+    }
+    h4 {
+      border-top: 1px #333 solid;
+      width: 100%;
+      max-width: 800px;
+      margin: 2em auto 1em auto;
+      padding: 2em 0 0;
+    }
+  }
 
 
   article.tease {
@@ -24,29 +86,79 @@ article.tease{margin:.5em 0;}
 
     header {
       font-weight: normal;
-      font-size: .81em;
+      font-size: .82em;
       color: #000000;
       margin: .25em 0 .25em 0;
-      text-align:left;
-
+      text-align: left;
     }
     .tease-timestamp {
       display: none;
     }
     .tease-photo {
-      width: 100%;
+      width: 238px;
+      float: none;
+      margin-left: 0;
+      &.one {
+        background-image: url('http://stmedia.startribune.com/images/THUMB_water.png');
+      }
+      &.two {
+        background-image: url('http://stmedia.startribune.com/images/THUMB_boom.png');
+      }
+      &.three {
+        background-image: url('http://stmedia.startribune.com/images/THUMB_people.png');
+      }
+      &.four {
+        background-image: url('http://stmedia.startribune.com/images/THUMB_suffering.png');
+      }
+      &.five {
+        background-image: url('http://stmedia.startribune.com/images/THUMB_nature.png');
+      }
+      &.six {
+        background-image: url('http://stmedia.startribune.com/images/THUMB_protect.png');
+      }
+      .tease-photo-img {
+        padding: 0;
+        width: 238px;
+        height: 134px;
+      }
     }
-    h1>a {
-      text-align:left;
+    video::-webkit-media-controls {
+      display: none !important;
+    }
+    video {
+      width: 238px;
+    }
+
+    a {
+      color: #000000;
+      transition: color 500ms;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #39563b;
+      transition: color 500ms;
+      text-decoration: none;
+    }
+    a:visited {
+      color: #000000;
+      transition: color 500ms;
+      text-decoration: none;
+    }
+
+
+
+    h1 {
+      text-align: left;
       @include font-styles('popular');
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1.18em;
       line-height: 1.15em;
+      padding-bottom: .2em;
     }
     .tease-summary {
       font-size: .875em;
       line-height: 1.2143em;
-      text-align:left;
+      text-align: left;
     }
   }
 }
