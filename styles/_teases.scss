@@ -3,18 +3,31 @@
  */
 
 .bios {
-  margin-bottom: 4em;
+  margin: 6em 0 4em;
   border-bottom: 1px solid #222;
   padding-bottom: 4em;
   .bio {
+
     display: table;
     margin: 2em 0;
+    p {
+      max-width: 100%;
+    }
     img {
       float: right;
       padding-left: 2em;
+       @media (max-width: 767px) {
+          float: none;
+          padding-left:0;
+        }
     }
     h2 {
       padding-top: 0;
+      font-style:italic;
+      @media (max-width: 767px) {
+          font-size:2.1em;
+          margin:.5em 0 .25em 0;
+        }
     }
   }
 }
@@ -45,41 +58,48 @@
       position: relative;
       right: auto;
       width: 100%;
-      .gallery-controls-mod {
-        padding: 0 0 10px 0;
-
-        .gallery-next-prev {
-          float: left;
-          width: 50%;
-          text-align: right;
-          
-        }
-        .gallery-view-toggle {
-          float: left;
-          width: 50%;
-        }
-      }
     }
   }
   &.ads {
     max-width: 970px;
     article.tease {
-      margin: .5em 0;
+      width:300px;
+      margin: .5em auto;
     }
     h4 {
       border-top: 1px #333 solid;
       width: 100%;
       max-width: 800px;
       margin: 2em auto 1em auto;
-      padding: 2em 0 0;
+      padding: 3em 0;
+      text-align:center;
     }
   }
 
 
   article.tease {
     display: table;
-    width: 238px;
+    width: 250px;
     height: auto;
+    @media (max-width: 500px) {
+      width:250px;
+      background-size: contain;
+      margin: 1em auto;
+    }
+    &.isDisabled {
+
+      h1,
+      .tease-summary {
+        color: #ccc;
+      }
+      .tease-photo {
+        display:inherit;
+        opacity: .3;
+        .tease-photo-img {
+          visibility: hidden;
+        }
+      }
+    }
     &:before {
       display: none;
     }
@@ -95,38 +115,39 @@
       display: none;
     }
     .tease-photo {
-      width: 238px;
+      width: 250px; 
       float: none;
-      margin-left: 0;
+      margin:0 0 .5em 0;
+      height:141px;
       &.one {
-        background-image: url('http://stmedia.startribune.com/images/THUMB_water.png');
+        background-image: url('http://stmedia.startribune.com/images/THUMB-water.png');
       }
       &.two {
-        background-image: url('http://stmedia.startribune.com/images/THUMB_boom.png');
+        background-image: url('http://stmedia.startribune.com/images/THUMB-boom.png');
       }
       &.three {
-        background-image: url('http://stmedia.startribune.com/images/THUMB_people.png');
+        background-image: url('http://stmedia.startribune.com/images/THUMB-people.png');
       }
       &.four {
-        background-image: url('http://stmedia.startribune.com/images/THUMB_suffering.png');
+        background-image: url('http://stmedia.startribune.com/images/THUMB-suffer.png');
       }
       &.five {
-        background-image: url('http://stmedia.startribune.com/images/THUMB_nature.png');
+        background-image: url('http://stmedia.startribune.com/images/THUMB-nature.png');
       }
       &.six {
-        background-image: url('http://stmedia.startribune.com/images/THUMB_protect.png');
+        background-image: url('http://stmedia.startribune.com/images/THUMB-protect.png');
       }
       .tease-photo-img {
         padding: 0;
-        width: 238px;
-        height: 134px;
+        width: 100%; 
+        height: 141px;
       }
     }
     video::-webkit-media-controls {
       display: none !important;
     }
     video {
-      width: 238px;
+      width: 100%;
     }
 
     a {

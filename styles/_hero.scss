@@ -2,12 +2,31 @@
 // .nav-strib-site {
 //   display: none;
 // }
+.myWrapper {
+  position: relative;
+  padding-bottom: 54%;
+  /*padding-top: 20px;*/
+  height: 0;
+}
+
+.myWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
 #heroVideo {
   position: relative;
-  left: 0;
-  top: 0;
+  // position: fixed;
+  right: 0;
+  bottom: 0;
   min-width: 100%;
-  min-height: 600px;
+  min-height: 100%;
+  display: block;
+  opacity: 0;
+  animation: introFade 3s 2s ease-out forwards;
 }
 
 .topNavBar {
@@ -31,6 +50,9 @@
     background-image: url(http://static.startribune.com/preview/stadium/img/strib-logo.png);
     background-size: contain;
     background-repeat: no-repeat;
+    @media (max-width: 767px) {
+      display:none;
+    }
   }
   .sponsor {
     display: none;
@@ -41,15 +63,18 @@
 .hero {
   overflow: hidden;
   position: relative;
-  height: 100%;
+  height: 80vh;
   margin-bottom: 2.5em;
   margin-top: 0;
   background-position: top left;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: white;
-  opacity: 0;
-  animation: introFade 3s 2s ease-out forwards;
+  background-color: #ededed;
+  @media (max-width: 769px) {
+    height: 60vh;
+  }
+
+
   padding: 0;
   .title-card {
     width: 100%;
@@ -71,7 +96,6 @@
   }
   &.multimedia {
     height: 50px;
-    
   }
   &.bios {
     background-image: url(http://stmedia.startribune.com/images/Superior-bios.png);
@@ -79,7 +103,8 @@
     min-height: 100%;
     background-size: cover;
     height: 80vh;
-    background-position: center
+    background-position: center;
+    margin:0 0 2.5em 0
   }
 }
 
