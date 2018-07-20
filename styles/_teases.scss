@@ -3,9 +3,9 @@
  */
 
 .bios {
-  margin: 6em 0 4em;
-  border-bottom: 1px solid #222;
-  padding-bottom: 4em;
+  margin-top: 6em;
+  // border-bottom: 1px solid #222;
+  // padding-bottom: 4em;
   .bio {
 
     display: table;
@@ -16,23 +16,21 @@
     img {
       float: right;
       padding-left: 2em;
-       @media (max-width: 767px) {
-          float: none;
-          padding-left:0;
-        }
+      @media (max-width: 767px) {
+        float: none;
+        padding-left: 0;
+      }
     }
     h2 {
       padding-top: 0;
-      font-style:italic;
+      font-style: italic;
       @media (max-width: 767px) {
-          font-size:2.1em;
-          margin:.5em 0 .25em 0;
-        }
+        font-size:2.1em;
+        margin: .5em 0 .25em 0;
+      }
     }
   }
 }
-
-
 
 .teases {
   width: 100%;
@@ -63,24 +61,27 @@
   &.ads {
     max-width: 970px;
     article.tease {
-      width:300px;
+      width: 300px;
       margin: .5em auto;
     }
-    h4 {
-      border-top: 1px #333 solid;
-      width: 100%;
-      max-width: 800px;
-      margin: 2em auto 1em auto;
-      padding: 3em 0;
-      text-align:center;
-    }
+     @media (max-width: 767px) {
+        h4 {display:none;}
+      }
   }
 
-
+  h4 {
+    border-top: 1px #333 solid;
+    width: 100%;
+    max-width: 800px;
+    margin: 2em auto 1em auto;
+    padding: 3em 0;
+    text-align: center;
+  }
   article.tease {
     display: table;
     width: 250px;
     height: auto;
+    margin-top:0;
     @media (max-width: 500px) {
       width:250px;
       background-size: contain;
@@ -93,7 +94,7 @@
         color: #ccc;
       }
       .tease-photo {
-        display:inherit;
+        display: inherit;
         opacity: .3;
         .tease-photo-img {
           visibility: hidden;
@@ -115,10 +116,10 @@
       display: none;
     }
     .tease-photo {
-      width: 250px; 
+      width: 250px;
       float: none;
-      margin:0 0 .5em 0;
-      height:141px;
+      margin: 0 0 .5em 0;
+      height: 141px;
       &.one {
         background-image: url('http://stmedia.startribune.com/images/THUMB-water.png');
       }
@@ -139,7 +140,7 @@
       }
       .tease-photo-img {
         padding: 0;
-        width: 100%; 
+        width: 100%;
         height: 141px;
       }
     }
@@ -175,6 +176,7 @@
       font-size: 1.18em;
       line-height: 1.15em;
       padding-bottom: .2em;
+      margin-bottom:0;
     }
     .tease-summary {
       font-size: .875em;

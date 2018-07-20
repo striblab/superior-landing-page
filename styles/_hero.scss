@@ -18,13 +18,24 @@
 }
 
 #heroVideo {
-  position: relative;
+  // position: relative;
   // position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  display: block;
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+  // z-index: -1000; 
+  overflow: hidden;
+  // right: 0;
+  // bottom: 0;
+  // min-width: 100%;
+  // min-height: 100%;
+  // display: block;
   opacity: 0;
   animation: introFade 3s 2s ease-out forwards;
 }
@@ -85,18 +96,20 @@
     h1 {
       text-transform: uppercase; // padding-right: 12px;
       display: inline-block;
-      letter-spacing: 2px;
+      
       @include font-styles('popular');
+      letter-spacing: .05em;
       font-weight: bold;
-      line-height: 86%;
-      font-size: 1.5em;
+      line-height: 120%;
+      font-size: 1.3em;
       color: #fff;
       text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.125);
     }
   }
-  &.multimedia {
+  &.multimedia, &.day1sb1, &.day1sb2 {
     height: 50px;
   }
+
   &.bios {
     background-image: url(http://stmedia.startribune.com/images/Superior-bios.png);
     min-width: 100%;
