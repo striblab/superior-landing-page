@@ -42,10 +42,11 @@ aside {
     max-width: 525px;
   }
   .drop-caps::first-letter {
-    // @include font-styles('whitman-display');
+    @include font-styles('whitman-display');
     font-size: 6em;
     float: left;
-    margin: .25em .16667em .25em 0;
+    line-height: .8em;
+    margin: 0 .16667em 0 0;
     font-weight: normal;
   }
   .size-xl {
@@ -110,10 +111,20 @@ aside {
       margin: 1em 0;
     }
   }
-  .day3-video {
+  .day3 {
     margin-top: 2em;
     width: 800px;
     display: inline-block;
+    &.second {
+      width: 500px;
+      float: right;
+      height: auto;
+      display: block;
+      margin: 0 0 0 2em;
+      .article-media__video {
+        height: 278px;
+      }
+    }
     .article-media__video {
       height: 450px;
     }
@@ -440,6 +451,12 @@ h1 {
 .day3-vertical {
   width: 400px;
   margin-right: 0;
+  @media (max-width: 767px) {
+    width: 100%;
+    float: none;
+    position: relative;
+    margin: 1em 0;
+  }
 }
 
 // GALLERY

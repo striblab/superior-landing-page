@@ -3,8 +3,7 @@
  */
 
 .bios {
-  margin-top: 6em;
-  // border-bottom: 1px solid #222;
+  margin-top: 6em; // border-bottom: 1px solid #222;
   // padding-bottom: 4em;
   .bio {
 
@@ -26,7 +25,7 @@
       font-style: italic;
       @media (max-width: 767px) {
         font-size:2.1em;
-        margin: .5em 0 .25em 0;
+        margin: .5em 0 .26em 0;
       }
     }
   }
@@ -43,6 +42,25 @@
     max-width: 970px;
     .tease {
       width: 300px;
+      .tease-photo-author {
+        font-size: 10px;
+        color: #999;
+        letter-spacing: 1px;
+      }
+      &.vr .tease-photo-author {
+        padding-top: 6px;
+        letter-spacing: 1px;
+      }
+      figcaption {
+        color: #444;
+        &.note {
+          font-size: .8em;
+          color: #999;
+          a {
+            color: #666;
+          }
+        }
+      }
     }
     .related-media {
       width: 100%;
@@ -64,9 +82,11 @@
       width: 300px;
       margin: .5em auto;
     }
-     @media (max-width: 767px) {
-        h4 {display:none;}
+    @media (max-width: 767px) {
+      h4 {
+        display: none;
       }
+    }
   }
 
   h4 {
@@ -81,7 +101,7 @@
     display: table;
     width: 250px;
     height: auto;
-    margin-top:0;
+    margin-top: 0;
     @media (max-width: 500px) {
       width:250px;
       background-size: contain;
@@ -176,7 +196,7 @@
       font-size: 1.18em;
       line-height: 1.15em;
       padding-bottom: .2em;
-      margin-bottom:0;
+      margin-bottom: 0;
     }
     .tease-summary {
       font-size: .875em;
