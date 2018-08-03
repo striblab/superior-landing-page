@@ -37,7 +37,74 @@ aside {
   }
 }
 
+.vr360 {
+  width: 415px;
+  float: right;
+  margin-right: -87px;
+  margin-left: 2em;
+  .tease-photo-caption a,
+  .gallery-image-caption a {
+    border-bottom: 0;
+  }
+  figcaption {
+    &.note {
+      font-size: .8em;
+      color: #666;
+    }
+    color:#000;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    margin: 2em auto;
+    float: none;
+  }
+}
+
 .storyBlock {
+  &.Day4 .tipsAccordion {
+
+    p {
+      @include font-styles('benton-sans');
+    }
+
+    .accordionMenu {
+
+      h4 {
+
+        background-color: #fff;
+        border-bottom: 1px solid #666;
+        cursor: pointer;
+        padding: 10px 0;
+        color: #444;
+        margin: 0;
+      }
+      .content {
+        background-color: #ffffff;
+        display: none;
+        margin: 0;
+        font-size: .9em;
+        padding: 10px 0 0 10px;
+        &.open {
+          display: block;
+        }
+      }
+    }
+    float: right;
+    width: 200px;
+    font-size: .81em;
+    line-height: 1em;
+    margin-right: -4em;
+    margin-top: -.7em;
+    margin-bottom: 2em;
+    @media (max-width: 767px) {
+      float: none;
+      max-width: 250px;
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin: 2em auto;
+    }
+  }
   &.day1sb2 {
     max-width: 525px;
   }
@@ -66,6 +133,7 @@ aside {
   p.Text_Endnote,
   p.Text_Tagline {
     font-style: italic;
+    max-width: 540px;
   }
   width: 100%;
   max-width: 800px;
@@ -111,18 +179,19 @@ aside {
       margin: 1em 0;
     }
   }
+
   .day3 {
     margin-top: 2em;
     width: 800px;
     display: inline-block;
     &.second {
-      width: 500px;
+      width: 400px;
       float: right;
       height: auto;
       display: block;
       margin: 0 0 0 2em;
       .article-media__video {
-        height: 278px;
+        height: 222px;
       }
     }
     .article-media__video {
@@ -176,7 +245,7 @@ aside {
     font-size: .81em;
     line-height:1em;
     margin-right:2.5em;
-    margin-top:-2em;
+    margin-top:-.7em;
     margin-bottom:2em;
     .galleryReefer,
     .biosReefer {
@@ -185,7 +254,7 @@ aside {
       padding-top: .7em;
     }
     .galleryReefer {
-      display: none;
+      // display: none;
     }
     @media (max-width: 767px) {
       margin-top: 0;
@@ -470,6 +539,18 @@ h1 {
     span {
       // background-color:red;
       visibility: hidden;
+    }
+  }
+}
+
+div.teases.multimedia {
+  #strib-gallery-486875811,
+  #strib-gallery-486876501 {
+    div:nth-of-type(3) {
+      span {
+        // background-color:red;
+        visibility: visible;
+      }
     }
   }
 }

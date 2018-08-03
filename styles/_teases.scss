@@ -40,6 +40,15 @@
   margin: 0 auto;
   &.multimedia {
     max-width: 970px;
+    border-bottom: 1px solid #444;
+    &.vr {
+      margin: 4em 0;
+      border-bottom: 0px;
+    }
+    &.galleries {
+      margin: 4em 0;
+      border-bottom: 0px;
+    }
     .tease {
       width: 300px;
       .tease-photo-author {

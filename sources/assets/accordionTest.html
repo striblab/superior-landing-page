@@ -1,0 +1,2798 @@
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="no-js ie8 oldie"> <![endif]-->
+<!--[if IE 9]><html lang="en" class="ie ie9"><![endif]-->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="app-debug" content="1">
+<meta name="app-env" content="local">
+<meta name="app-platform" content="desktop">
+<meta name="app-revision" content="Development">
+<meta name="bugsnag-api-key" content="57098e87943fb0b8bcf51a8ffc9ca41a">
+
+    <meta name='feature:Example Active' content='{"name":"Example Active","status":true}'>
+    <meta name='feature:Example Inactive' content='{"name":"Example Inactive","status":false}'>
+    <meta name='feature:Ads' content='{"name":"Ads","status":true}'>
+    <meta name='feature:Ads Toggle' content='{"name":"Ads Toggle","status":true}'>
+    <meta name='feature:Header Bidding' content='{"name":"Header Bidding","status":true}'>
+    <meta name='feature:Prebid' content='{"name":"Prebid","status":true}'>
+    <meta name='feature:Biddr360' content='{"name":"Biddr360","status":true}'>
+    <meta name='feature:Amazon' content='{"name":"Amazon","status":true}'>
+    <meta name='feature:Analytics' content='{"name":"Analytics","status":true}'>
+    <meta name='feature:Array Cache' content='{"name":"Array Cache","status":true}'>
+    <meta name='feature:Bit.ly Short Url' content='{"name":"Bit.ly Short Url","status":false}'>
+    <meta name='feature:Bounce-X' content='{"name":"Bounce-X","status":true}'>
+    <meta name='feature:Comments' content='{"name":"Comments","status":true}'>
+    <meta name='feature:CommentCount' content='{"name":"CommentCount","status":true}'>
+    <meta name='feature:Confiant' content='{"name":"Confiant","status":true}'>
+    <meta name='feature:Cron Status Pages' content='{"name":"Cron Status Pages","status":true}'>
+    <meta name='feature:Data Layer' content='{"name":"Data Layer","status":true}'>
+    <meta name='feature:CmsApiCache' content='{"name":"CmsApiCache","status":true}'>
+    <meta name='feature:Delay Asset Modified Cache Keys' content='{"name":"Delay Asset Modified Cache Keys","status":true}'>
+    <meta name='feature:Design Standard Signup Modal' content='{"name":"Design Standard Signup Modal","status":false}'>
+    <meta name='feature:Homepage The Stream' content='{"name":"Homepage The Stream","status":true}'>
+    <meta name='feature:Elections Article Banner' content='{"name":"Elections Article Banner","status":false}'>
+    <meta name='feature:Elections Politics Banner' content='{"name":"Elections Politics Banner","status":false}'>
+    <meta name='feature:Elections Article MyVote Module' content='{"name":"Elections Article MyVote Module","status":false}'>
+    <meta name='feature:Elections myVote Module' content='{"name":"Elections myVote Module","status":false}'>
+    <meta name='feature:Elections Live Updates' content='{"name":"Elections Live Updates","status":false}'>
+    <meta name='feature:Elections Polls Close Counter' content='{"name":"Elections Polls Close Counter","status":false}'>
+    <meta name='feature:Elections Disable Polls Close Counter' content='{"name":"Elections Disable Polls Close Counter","status":false}'>
+    <meta name='feature:Elections Results Dashboard' content='{"name":"Elections Results Dashboard","status":false}'>
+    <meta name='feature:Elections Disable Results Dashboard' content='{"name":"Elections Disable Results Dashboard","status":false}'>
+    <meta name='feature:Elections Results Dashboard - All Templates' content='{"name":"Elections Results Dashboard - All Templates","status":false}'>
+    <meta name='feature:Elections Presidential Race Map' content='{"name":"Elections Presidential Race Map","status":false}'>
+    <meta name='feature:Elections Disable Presidential Race Map' content='{"name":"Elections Disable Presidential Race Map","status":false}'>
+    <meta name='feature:Elections Presidential Race Map - All Templates' content='{"name":"Elections Presidential Race Map - All Templates","status":false}'>
+    <meta name='feature:Grazers' content='{"name":"Grazers","status":true}'>
+    <meta name='feature:Product Refresh Cookie' content='{"name":"Product Refresh Cookie","status":false}'>
+    <meta name='feature:Product Refresh Cookie Javascript' content='{"name":"Product Refresh Cookie Javascript","status":true}'>
+    <meta name='feature:Product Refresh Cookie Failure' content='{"name":"Product Refresh Cookie Failure","status":false}'>
+    <meta name='feature:Imgix' content='{"name":"Imgix","status":true}'>
+    <meta name='feature:Meter' content='{"name":"Meter","status":true}'>
+    <meta name='feature:Optimizely' content='{"name":"Optimizely","status":true}'>
+    <meta name='feature:Set Session Cookie' content='{"name":"Set Session Cookie","status":true}'>
+    <meta name='feature:TSN Sports' content='{"name":"TSN Sports","status":true}'>
+    <meta name='feature:Outbrain' content='{"name":"Outbrain","status":false}'>
+    <meta name='feature:No Short Url' content='{"name":"No Short Url","status":false}'>
+    <meta name='feature:Taboola' content='{"name":"Taboola","status":true}'>
+    <meta name='feature:Rubicon' content='{"name":"Rubicon","status":true}'>
+    <meta name='feature:Index' content='{"name":"Index","status":true}'>
+    <meta name='feature:Post' content='{"name":"Post","status":false}'>
+    <meta name='feature:Prediction.IO' content='{"name":"Prediction.IO","status":true}'>
+    <meta name='feature:TipsNavigation' content='{"name":"TipsNavigation","status":false}'>
+    <meta name='feature:RobotsNoIndex' content='{"name":"RobotsNoIndex","status":false}'>
+    <meta name='feature:WelcomeScreen' content='{"name":"WelcomeScreen","status":true}'>
+    <meta name='feature:PageFair' content='{"name":"PageFair","status":false}'>
+    <meta name='feature:Zone 3' content='{"name":"Zone 3","status":true}'>
+    <meta name='feature:Lazy Load Zone 3' content='{"name":"Lazy Load Zone 3","status":true}'>
+    <meta name='feature:Use Personalization API' content='{"name":"Use Personalization API","status":false}'>
+    <meta name='feature:User State Speed Increase' content='{"name":"User State Speed Increase","status":true}'>
+    <meta name='feature:User Platform Digital Access' content='{"name":"User Platform Digital Access","status":true}'>
+    <meta name='feature:Snowplow Ananlytics' content='{"name":"Snowplow Ananlytics","status":false}'>
+    <meta name='feature:Right Rail Video Auto Play Module' content='{"name":"Right Rail Video Auto Play Module","status":false}'>
+    <meta name='feature:Disable Homepage Featured Media' content='{"name":"Disable Homepage Featured Media","status":false}'>
+    <meta name='feature:Disable Homepage Featured Media Auto-play' content='{"name":"Disable Homepage Featured Media Auto-play","status":false}'>
+    <meta name='feature:Auto-Advance' content='{"name":"Auto-Advance","status":true}'>
+
+<link rel="stylesheet" href="//localhost:3000/vendor/css/startribune.css?d=1529343484">
+<script type="text/javascript" src="//localhost:3000/vendor/js/shims.js?d=1529343497"></script>
+<script type="text/javascript" src="//localhost:3000/vendor/js/bugsnag.js?d=1529343495"></script>
+<script type="text/javascript" src="//localhost:3000/vendor/js/startribune.js?d=1529343498"></script>
+    	          <script type="text/javascript" src="//localhost:3000/static/vendor/jquery/dist/jquery.min.js?d=1523548612"></script>
+    
+    
+
+	
+				 	<!-- Begin Outdoor Weekend Series Header Tag -->
+<script> var gptadslots = []; var googletag = googletag || {cmd:[]};
+</script>
+<script> googletag.cmd.push(function() { gptadslots.push(googletag.defineSlot('/7932/website/web_sports/web_sports_outdoors/web_sports_outdoors_weekend_series', [[300,250]], 'div-gpt-ad-4205362-1') .setTargeting('pos', ['1']) .addService(googletag.pubads())); gptadslots.push(googletag.defineSlot('/7932/website/web_sports/web_sports_outdoors/web_sports_outdoors_weekend_series', [[300,250]], 'div-gpt-ad-4205362-2') .setTargeting('pos', ['2']) .addService(googletag.pubads())); gptadslots.push(googletag.defineSlot('/7932/website/web_sports/web_sports_outdoors/web_sports_outdoors_weekend_series', [[300,250]], 'div-gpt-ad-4205362-3') .setTargeting('pos', ['3']) .addService(googletag.pubads())); gptadslots.push(googletag.defineSlot('/7932/website/web_sports/web_sports_outdoors/web_sports_outdoors_weekend_series', [[300,250]], 'div-gpt-ad-4205362-4') .setTargeting('pos', ['4']) .addService(googletag.pubads())); gptadslots.push(googletag.defineSlot('/7932/website/web_sports/web_sports_outdoors/web_sports_outdoors_weekend_series', [[300,250]], 'div-gpt-ad-4205362-5') .setTargeting('pos', ['5']) .addService(googletag.pubads())); gptadslots.push(googletag.defineSlot('/7932/website/web_sports/web_sports_outdoors/web_sports_outdoors_weekend_series', [[300,250]], 'div-gpt-ad-4205362-6') .setTargeting('pos', ['6']) .addService(googletag.pubads())); });
+</script>
+<!-- End Header Tag -->
+
+    <script>window.strib = window.strib || {};strib.adConfig = {"slotString":"\/7932\/website\/web_protected","globalTargeting":{"ct":"a","ctid":"485943391"},"ads":{"zone-none":{"block-2":{"navtab":{"id":"zone-none-block-2-navtab","name":"navtab","sizes":"[[86,40]]","targeting":{"pos":"2"},"targetedTemplates":"standard","lazyLoad":"false"},"navtab-left":{"id":"zone-none-block-2-navtab-left","name":"navtab-left","sizes":"[[110,38]]","targeting":{"pos":"2"},"targetedTemplates":"standard"}}}},"streamAds":[],"premium":{"hover":{"sizes":"[[100,90]]","slotString":"\/7932","adUnitId":8514241,"adUnitName":"7932","targeting":{"pos":"sk1"},"id":"div-gpt-ad-premium-7932-hover","lineItemName":"Hover Blocker - 480678461,480680891,485943941","lineItemExtId":0,"lineItemIntId":4690777654},"interstitial":{"sizes":"[[1,1001]]","slotString":"\/7932","adUnitId":8514241,"adUnitName":"7932","targeting":{"pos":"sk1"},"id":"div-gpt-ad-premium-7932-interstitial","lineItemName":"1x1001  -","lineItemExtId":0,"lineItemIntId":4691044967}},"debug":[],"adsDisabled":false,"disabledPremiumAds":{"hoverAds":0,"interstitialAds":0,"skinAds":true,"superBillboardAds":0},"videoPreroll":null,"videoPostroll":null,"refreshInterval":null,"refreshPositions":[],"nativoAds":false};</script>
+    <script type="text/javascript">
+                window.disableAllClicks = false;
+
+        window.segmentation = window.segmentation || {};
+                    window.segmentation.grazers = true;
+            </script>
+
+    
+        <script type="text/javascript">
+
+            // Variables for optimizely
+            window.opt_target = {
+                contentType: 'story',
+                sectionPath: '/',
+                minorSection: '/',
+                majorSection: '/protected/',
+                recommendations: 'enabled'
+            };
+        </script>
+                <script src="//cdn.optimizely.com/js/3104270409.js"></script>
+
+                        <script type="text/javascript">
+            var attempts = 1;
+            var tagDetected = false;
+            var detectTag = setInterval(function () {
+                if (typeof window.stblkck !== 'undefined') {
+                    if (window.stblkck) {
+                        document.cookie = "tagDetected=true; domain=.startribune.com; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                        tagDetected = true;
+                        clearInterval(detectTag);
+                        clearTimeout(checkComplete);
+                    }
+                }
+                attempts++;
+                if (attempts >= 15) {
+                    clearInterval(detectTag);
+                }
+            }, 1000);
+            var checkComplete = setTimeout(function () {
+                clearInterval(detectTag);
+                if (!tagDetected) {
+                    document.cookie = "tagDetected=false; domain=.startribune.com; path=/; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+                }
+            }, 15000);
+        </script>
+    
+
+    <script type="text/javascript">
+        function isWelcomeShowing() {
+            var welcomeModuleElement = jQuery('#WelcomeModule');
+            if (welcomeModuleElement.length > 0 && welcomeModuleElement.css('display') === 'block') {
+                return true;
+            }
+            return false;
+        }
+
+        function isPhone() {
+            return /Android|webOS|iPhone|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        var twigJsDomain = 'localhost:3000';
+        var assetDomain = '';
+        if (assetDomain != '' && typeof assetDomain == 'string') {
+          twigJsDomain = assetDomain;
+        }
+        twigJsDomain = location.protocol + '//' + twigJsDomain;
+
+        function localStorageAvailable() {
+            try {
+                localStorage.setItem('availability_test', true);
+                localStorage.removeItem('availability_test');
+            } catch (e) {
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+
+    
+    <title>Gifts amid the grind - StarTribune.com</title>
+    <meta name="google-site-verification" content="bLXTXkzm4dJ8hcJy1LXawtxXxGP3JhInARj69uCiMiM" />
+            <meta name="robots" content="noindex" />
+            
+    <link rel="apple-touch-icon" href="//localhost:3000/img/touch-icon-iphone-retina.png?d=1463589766">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="//localhost:3000/img/touch-icon-ipad.png?d=1463589766">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="//localhost:3000/img/touch-icon-iphone-retina.png?d=1463589766">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="//localhost:3000/img/touch-icon-ipad-retina.png?d=1463589766">
+
+                        <link rel="canonical" href="http://www.startribune.com/owtrail080318/485943391/" />
+        <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.startribune.com/owtrail080318/485943391/" />
+            
+            <meta itemprop="name" content="Gifts amid the grind" /><!-- g+ -->
+    <meta name="description" content="Follow the StarTribune for the news, photos and videos from the Twin Cities and beyond." />
+    <meta itemprop="description" content="Follow the StarTribune for the news, photos and videos from the Twin Cities and beyond." /><!-- g+ -->
+                            <meta itemprop="image" content="http://stmedia.stimg.co/ows_153176230143868.jpg?h=630&amp;w=1200&amp;fit=crop&amp;bg=999&amp;crop=faces"><!-- g+ -->
+            
+        <meta property="og:site_name" content="Star Tribune" />
+
+                    <meta property="og:type" content="article" />
+        <meta property="og:title" content="Gifts amid the grind" /><!-- fb, linkedin, pinterest -->
+        <meta property="og:description" content="Follow the StarTribune for the news, photos and videos from the Twin Cities and beyond." /><!-- fb, linkedin, pinterest -->
+                    <meta property="og:url" content="http://www.startribune.com/owtrail080318/485943391/" />
+                                            <meta property="og:image" content="http://stmedia.stimg.co/ows_153176230143868.jpg?h=630&amp;w=1200&amp;fit=crop&amp;bg=999&amp;crop=faces" /><!-- fb, linkedin, pinterest -->
+                <meta property="og:image:url" content="http://stmedia.stimg.co/ows_153176230143868.jpg?h=630&amp;w=1200&amp;fit=crop&amp;bg=999&amp;crop=faces" /><!-- fb, linkedin, pinterest -->
+                <meta property="og:image:width" content="1200" /><!-- fb, linkedin, pinterest -->
+                <meta property="og:image:height" content="630" /><!-- fb, linkedin, pinterest -->
+                        
+        <meta name="twitter:site" content="@StarTribune" />
+        <meta name="twitter:card" content="summary_large_image">
+
+            <meta name="twitter:title" content="Gifts amid the grind" /><!-- twitter -->
+    <meta name="twitter:description" content="Follow the StarTribune for the news, photos and videos from the Twin Cities and beyond." /><!-- twitter -->
+                <meta name="twitter:url" content="http://www.startribune.com/owtrail080318/485943391/" /><!-- twitter -->
+                            <meta name="twitter:image" content="http://stmedia.stimg.co/ows_153176230143868.jpg?h=630&amp;w=1200&amp;fit=crop&amp;bg=999&amp;crop=faces"><!-- twitter -->
+            <meta name="twitter:image:src" content="http://stmedia.stimg.co/ows_153176230143868.jpg?h=630&amp;w=1200&amp;fit=crop&amp;bg=999&amp;crop=faces"><!-- twitter -->
+            
+                  <meta property="fb:pages" content="42739463017" />
+          <meta property="fb:pages" content="57441959950" />
+          <meta property="fb:pages" content="37038662909" />
+          <meta property="fb:pages" content="140536902040" />
+          <meta property="fb:pages" content="227191347864" />
+          <meta property="fb:pages" content="54374033570" />
+          <meta property="fb:pages" content="49573759647" />
+        
+        
+            <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"NewsArticle","url":"http:\/\/localhost:3000\/owtrail080318\/485943391\/","author":{"@type":"Person","name":"Melanie Radzicki McManus"},"headline":"Gifts amid the grind","datePublished":"2018-08-01T22:54:01.000Z","dateModified":"2018-08-01T22:54:01.000Z","mainEntityOfPage":"http:\/\/www.startribune.com\/owtrail080318\/485943391\/","image":{"@type":"ImageObject","url":"http:\/\/stmedia.stimg.co\/ows_153176230143868.jpg?h=630&w=1200&fit=crop&bg=999&crop=faces","width":1200,"height":630},"publisher":{"@type":"Organization","name":"Star Tribune","logo":{"@type":"ImageObject","url":"http:\/\/di.stimg.co\/st-share-logo-star.png"}}}</script>
+        <script type="text/javascript">
+    if( typeof window.console === 'undefined' ) {
+      var noOp = function() {};    // no-op function
+      console = {
+        log: noOp,
+        warn: noOp,
+        info: noOp,
+        error: noOp,
+        debug: noOp
+      };
+    }
+
+    reloadTimerActive = true;
+    var FeatureAPI_JS_TipsNavigation = false;
+      </script>
+            <link rel="stylesheet" href="//localhost:3000/static/css/screen.css?d=1529343490" />
+      <link rel="shortcut icon" href="https://www.startribune.com/favicon.ico" type="image/x-icon" />
+  <link rel="mask-icon" href="//localhost:3000/vector-icon.svg?d=1496334896" color="#5bbad5">
+      <script type="text/javascript" src="//localhost:3000/static/vendor/modernizr/modernizr.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/jquery.cookie/jquery.cookie.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/analytics-assets/sitecatalyst/AppMeasurement.js?d=1531497061"></script>
+  
+  <script type="text/javascript" src="//localhost:3000/analytics-assets/visit-day-count.js?d=1497470090"></script>
+  <script type="text/javascript" src="//localhost:3000/analytics-assets/30-day-visits.js?d=1496334896"></script>
+  <script type="text/javascript" src="//localhost:3000/analytics-assets/detect-private-browsing.js?d=1507743441"></script>
+
+  
+
+  <script type="text/javascript">
+      //
+      // If user is already logged in to member center but not here, get their info from SAML
+      //
+      if( jQuery.cookie( 'st_usr_plat' ) && !jQuery.cookie( 'st_usr_name' ) && !jQuery.cookie( 'login_attempt_strib' ) ) {
+          jQuery.cookie( 'login_attempt_strib', true );
+          window.location.href = '/login?path=' + encodeURIComponent( document.location );
+      }
+      var isHome = false;
+  </script>
+
+                    
+
+            <script type="text/javascript">
+    !function(a9,a,p,s,t,A,g){
+        if(a[a9])return;
+        function q(c,r){a[a9]._Q.push([c,r])}
+        a[a9]={init:function(){q("i",arguments)},
+        fetchBids:function(){q("f",arguments)},
+        setDisplayBids:function(){},_Q:[]};
+        A=p.createElement(s);
+        A.async=!0;
+        A.src=t;
+        g=p.getElementsByTagName(s)[0];
+        g.parentNode.insertBefore( A,g)
+    }("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");
+</script>
+                <script type="text/javascript" src="//localhost:3000/static/js/ads/prebid.js?d=1523548612"></script>
+                <script src="//biddr.brealtime.com/39959674-1024.js" type="text/javascript"></script>
+    
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+
+<script type="text/javascript" src="//localhost:3000/static/js/ads/targeting.js?d=1480957425"></script>
+
+<script type="text/javascript">
+    //
+    // Referrer/Sideways page:
+    // If user comes from non-startribune domain, they get a different ad configuration when the article is over 24-hours old.
+    // The backend will always load the sideways ad data; the frontend determines whether to request these ads.
+    //
+    var showSidewaysPage = false;
+    
+    var hasGrazersParam = false;
+    
+    var isUserGrazer = function () {
+        if ( hasGrazersParam ) {
+            return true;
+        }
+        var userIsGuest = readCookie('st_usr_name') == '' && readCookie('st_usr_sub_id') == '';
+        var firstPageEligible = false;
+        var firstPageValue;
+        if ( readCookie('snowp_first_page_type') == '' ) {
+            firstPageValue = 'story';
+        } else {
+            firstPageValue = readCookie('snowp_first_page_type');
+        }
+        firstPageEligible = firstPageValue == 'story' || firstPageValue == 'blog';
+
+        var fewMonthlyVisits = window.visitCount30 <= 4;
+
+        return userIsGuest && firstPageEligible && fewMonthlyVisits;
+    };
+
+    if( window.opt_sideways ) {
+        showSidewaysPage = true;    // optimizely override
+    }
+
+    window.slotMap = {};
+    var adConfig = window.strib.adConfig || { ads: {}, globalTargeting: {} };
+
+    var prebidUnits = [];
+    var bidders = [];
+    var PREBID_TIMEOUT = 1000;
+    var bidsDelivered = {};
+
+            bidsDelivered.amazon = false;
+    
+            bidsDelivered.prebid = false;
+    
+            bidders.push('rubicon');
+    
+            bidders.push('indexExchange');
+    
+    function filterSizes (allSizes, validSizes) {
+        // allSizes is an array of sizes, where each size is an array of length 2.
+        // validSizes is an array of strings in the format "NxN"
+        return allSizes.filter(function (size) {
+            return validSizes.indexOf(size.join('x')) > -1;
+        });
+    }
+
+    function getBidderBaseParams (bidder) {
+        switch (bidder) {
+            case 'rubicon':
+                var section;
+                if (adConfig.slotString) {
+                    section = adConfig.slotString.split('_');
+                    section = section[section.length - 1];
+                }
+                return {
+                    accountId: '8929',
+                    siteId: '14825',
+                    zoneId: '31439',
+                    inventory: { section: section }
+                };
+            case 'indexExchange':
+            default:
+                return {}; // no base params
+        }
+    }
+
+    var prebidSizesHorizontal = ['728x90', '970x250', '970x90'];
+    var prebidSizesVertical = ['300x250', '300x600', '160x600', '300x1050', '320x50'];
+    var prebidSizes = prebidSizesHorizontal.concat(prebidSizesVertical);
+
+    function getSlotBid (bidder, slotConfig) {
+        var params = getBidderBaseParams(bidder);
+        var pos = slotConfig.targeting && slotConfig.targeting.pos;
+        var posType = pos === '1' ? 'atf' : 'btf';
+
+        switch (bidder) {
+            case 'rubicon':
+                params.position = posType;
+                break;
+            case 'indexExchange':
+                var indexId;
+                var slotSizes = JSON.parse(slotConfig.sizes).map(function (size) {
+                    return size.join('x');
+                });
+                var verticalMatches = slotSizes.filter(function (size) {
+                    return prebidSizesVertical.indexOf(size) > -1;
+                });
+                var horizontalMatches = slotSizes.filter(function (size) {
+                    return prebidSizesHorizontal.indexOf(size) > -1;
+                });
+                if (verticalMatches.length) {
+                    indexId = posType === 'atf' ? '01' : '03';
+                } else if (horizontalMatches.length) {
+                    indexId = posType === 'atf' ? '02' : '04';
+                } else {
+                    // index does not support this size
+                    return;
+                }
+
+                params.id = indexId;
+                params.siteID = String(254834 + (parseInt(indexId, 10) - 1));
+                break;
+        }
+
+        return {
+            bidder: bidder,
+            params: params
+        };
+    }
+
+    for ( var zone in adConfig.ads ) {
+        if ( !adConfig.ads.hasOwnProperty(zone) ) continue;
+        for ( var position in adConfig.ads[zone] ) {
+            if ( !adConfig.ads[zone].hasOwnProperty(position) ) continue;
+            for ( var ad in adConfig.ads[zone][position] ) {
+                if ( !adConfig.ads[zone][position].hasOwnProperty(ad) ) continue;
+                var adObj = adConfig.ads[zone][position][ad];
+
+                slotMap[ adObj.id ] = adObj;
+
+                if (['nav-flag', 'navtab', 'native'].indexOf(adObj.name) > -1) {
+                    // don't use these slots for header bidding
+                    continue;
+                }
+
+                var sizes = filterSizes(JSON.parse(adObj.sizes), prebidSizes);
+
+                prebidUnits.push({
+                    code: adObj.id,
+                    mediaTypes: {
+                        banner: {
+                            sizes: sizes
+                        }
+                    },
+                    sizes: sizes,
+                    bids: bidders.map(function (bidder) {
+                        return getSlotBid(bidder, adObj);
+                    }).filter(function (bid) {
+                        // remove empty bids
+                        return !!bid;
+                    })
+                });
+            }
+        }
+    }
+
+            var pbjs = pbjs || {};
+        pbjs.que = pbjs.que || [];
+
+        pbjs.que.push(function() {
+            pbjs.setConfig({
+                enableSendAllBids: true,
+                priceGranularity: 'dense'
+            });
+        });
+
+        pbjs.que.push(function() {
+            pbjs.addAdUnits(prebidUnits);
+            pbjs.requestBids({
+                bidsBackHandler: sendAdserverRequest
+            });
+        });
+
+        function sendAdserverRequest() {
+            if (pbjs.adserverRequestSent) return;
+
+            pbjs.adserverRequestSent = true;
+            googletag.cmd.push(function() {
+                pbjs.que.push(function() {
+                    pbjs.setTargetingForGPTAsync();
+                    window.onBidsReceived('prebid');
+                });
+            });
+        }
+
+        setTimeout(function() {
+            sendAdserverRequest();
+        }, PREBID_TIMEOUT);
+    
+    try {
+        googletag.cmd.push(function() {
+            
+            for ( var key in slotMap ) {
+                if ( !slotMap.hasOwnProperty(key) ) continue;
+
+                var slotString = adConfig.slotString;
+                if ( slotMap[key].optionalSlotString ) slotString = slotString + '/' + slotMap[key].optionalSlotString;
+                slotMap[key].slot = googletag.defineSlot(slotString, JSON.parse(slotMap[key].sizes), slotMap[key].id);
+                for ( var targetingKey in slotMap[key].targeting ) {
+                    if ( slotMap[key].targeting.hasOwnProperty(targetingKey) ) {
+                        slotMap[key].slot.setTargeting( targetingKey, slotMap[key].targeting[targetingKey] );
+                    }
+                }
+                slotMap[key].slot.addService( googletag.pubads() );
+            }
+
+            
+        });
+
+    } catch(e) {
+        if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+            Bugsnag.notify(e);
+        }
+    }
+
+    try {
+        googletag.cmd.push(function() {
+            slotMap[ 'zone-none-outofpage' ] = {
+                slot: googletag.defineOutOfPageSlot( adConfig.slotString, 'zone-none-outofpage').addService( googletag.pubads() )
+            };
+
+            if (adConfig.premium) {
+                for (var ad in adConfig.premium) {
+                    if ( !adConfig.premium.hasOwnProperty(ad) ) continue;
+
+                    var ad = adConfig.premium[ad];
+                    slotMap[ ad.id ] = {
+                        slot: googletag.defineSlot( adConfig.slotString, JSON.parse( ad.sizes ), ad.id )
+                    }
+
+                    for (var key in ad.targeting) {
+                        if ( !ad.targeting.hasOwnProperty(key) ) continue;
+                        slotMap[ ad.id ].slot.setTargeting(key, ad.targeting[key]);
+                    }
+
+                    slotMap[ ad.id ].slot.addService( googletag.pubads() );
+                }
+            }
+
+            if (adConfig.globalTargeting) {
+                for (var key in adConfig.globalTargeting) {
+                    if ( adConfig.globalTargeting.hasOwnProperty(key) ) {
+                        googletag.pubads().setTargeting(key, adConfig.globalTargeting[key] );
+                    }
+                }
+            }
+
+            for ( var key in keyVals ) {
+                if ( keyVals.hasOwnProperty( key ) ) {
+                    googletag.pubads().setTargeting( key, keyVals[key] );
+                }
+            }
+
+            // set ad targeting on the client based on article sideways status
+                            if( showSidewaysPage || (window.segmentation.grazers && isUserGrazer())) {
+                    googletag.pubads().setTargeting( 'ct', 's' );
+                } else {
+                    googletag.pubads().setTargeting( 'ct', 'a' );
+                }
+            
+            if ( $.cookie("st_usr_saml_id") ) {
+                googletag.pubads().setTargeting('fyis', $.cookie("st_usr_saml_id") );
+            }
+
+            
+            
+            
+        });
+    } catch(e) {
+        if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+            Bugsnag.notify(e);
+        }
+    }
+
+    function onBidsReceived (bidder) {
+        if (bidsDelivered.hasOwnProperty(bidder)) {
+            bidsDelivered[bidder] = true;
+        }
+        if (allBidsReceived()) {
+            onBiddingComplete();
+        }
+    }
+
+    function allBidsReceived () {
+        for (var bidder in bidsDelivered) {
+            if (bidsDelivered.hasOwnProperty(bidder)) {
+                if (!bidsDelivered[bidder]) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    function onBiddingComplete () {
+        googletag.cmd.push(function () {
+            googletag.pubads().refresh();
+            window.initialAdRefreshComplete = true
+        });
+    }
+
+    function displayAd(id) {
+        googletag.cmd.push(function () {
+            googletag.display(id);
+            slotMap[id].displayed = true;
+
+                            if (allBidsReceived()) {
+                    googletag.pubads().refresh([ slotMap[id].slot ]);
+                    slotMap[id].refreshed = true;
+                }
+                    });
+    }
+</script>
+
+            <script type="text/javascript">
+    try {
+        (function () {
+            // initialize apstag and have apstag set bids on the googletag slots when they are returned to the page
+            apstag.init({
+                pubID: '3151',
+                adServer: 'googletag',
+                bidTimeout: 2e3
+            });
+
+            var amazonSlots = [];
+            var sizesToSend = [];
+            var sizes = [];
+            var approvedSizes = [ [300,250], [300,600], [728,90], [970,90], [970,250], [160,600] ];
+            var posPriority = ["1", "z1", "z2", "z3", "2", "f1", "z4", "3", "4", "5", "if1", "6", "7", "if2", "8", "ia1", "ia2", "ia3", "ia4", "9", "sig", "hm1", "hm2", "if3", "if4", "ic1", "ic2", "ic3", "ic4", "if5"];
+
+            var adConfig = window.strib.adConfig || { ads: {} };
+
+            for ( var zone in adConfig.ads ) {
+                if ( !adConfig.ads.hasOwnProperty(zone) ) continue;
+                for ( var position in adConfig.ads[zone] ) {
+                    if ( !adConfig.ads[zone].hasOwnProperty(position) ) continue;
+                    for ( var ad in adConfig.ads[zone][position] ) {
+                        if ( !adConfig.ads[zone][position].hasOwnProperty(ad) ) continue;
+                        var adObj = adConfig.ads[zone][position][ad];
+
+                        sizes = JSON.parse(adObj.sizes);
+                        sizesToSend = [];
+                        for (var i = 0; i < sizes.length; i++) {
+                            if ( JSON.stringify(approvedSizes).indexOf( JSON.stringify( sizes[i] ) ) > -1 ) {
+                                sizesToSend.push(sizes[i]);
+                            }
+                        }
+
+                        if (sizesToSend.length) {
+                            amazonSlots.push({
+                                slotID: adObj.id,
+                                sizes: sizesToSend,
+                                pos: adObj.targeting.pos
+                            });
+                        }
+                    }
+                }
+            }
+
+            // Some browsers truncate requests after 2000 characters
+            // if (estimateRequestlength(amazonSlots) > 2000) {
+            //     amazonSlots = buildPrioritySlots(amazonSlots, posPriority);
+            // }
+
+            apstag.fetchBids({
+                slots: amazonSlots
+            }, function (bids) {
+                googletag.cmd.push(function() {
+                    apstag.setDisplayBids();
+                    window.onBidsReceived('amazon');
+                });
+            });
+
+            // Formats the array of slots to the amazon url format
+            function amazonSlotFormat(slots) {
+                var slotArray = [];
+                // remove any extra data
+                for (var slot in slots) {
+                    if ( slots.hasOwnProperty(slot) ) {
+                        slotArray.push({
+                            slotID: slots[slot].slotID,
+                            sizes: slots[slot].sizes
+                        });
+                    }
+                }
+
+                var arr = JSON.stringify(slotArray);
+                arr = arr.replace(/\[(\d+),(\d+)\]/g, '"$1x$2"');
+                arr = arr.replace(/sizes/g, 's');
+                arr = arr.replace(/slotID/g, 'id');
+                arr = arr.replace(/"/g, '%22');
+
+                return arr;
+            }
+
+            // constructs a fake amazon url to check how long the actual request will be
+            function estimateRequestlength(slots) {
+                var url = 'http://aax.amazon-adsystem.com/e/dtb/bid?src=3151&u=';
+                url += encodeURIComponent(document.location.href);
+                url += '&pid=9115078881492616446700&cb=5349134271492616448207&ws=1440x702&v=4.0.0&t=2000&slots=';
+                url += amazonSlotFormat(slots);
+
+                return url.length;
+            }
+
+            // Rebuilds the slot list so it fits within the request character limit
+            function buildPrioritySlots(slots, priorities) {
+                var prioritySlots = [];
+                for (var i = 0; i < priorities.length; i++) {
+                    for (var j = 0; j < slots.length; j++) {
+                        if (slots[j].pos !== priorities[i]) continue;
+
+                        prioritySlots.push(slots[j]);
+                        if (estimateRequestlength(prioritySlots) > 2000) {
+                            prioritySlots.splice(prioritySlots.length - 1, 1);
+                            return prioritySlots;
+                        }
+                    }
+                }
+
+                return prioritySlots;
+            }
+        })();
+
+    } catch (e) {
+        if (document.location.href.indexOf('.dev') > -1 ||
+            document.location.href.indexOf('vm-www') > -1 ||
+            document.location.href.indexOf('stage-www') > -1 ||
+            document.location.href.indexOf('bidding-www') > -1
+        ) {
+            console.error(e);
+        } else {
+            Bugsnag.notify(e);
+        }
+    }
+</script>
+    
+    <script type="text/javascript">
+    $(document).ready(function(d) {
+        if(typeof isUserGrazer === "function") {
+            <!-- Start BounceX tag. Deploy at the beginning of document head. -->
+            if (isUserGrazer() && window.segmentation.grazers) {
+                var e = d.createElement('script');
+                e.src = d.location.protocol + '//tag.bounceexchange.com/2749/i.js';
+                e.async = true;
+                d.getElementsByTagName("head")[0].appendChild(e);
+            }
+        <!-- End BounceX Tag-->
+        }
+    }(document));
+</script>
+<script type="text/javascript">
+    // lazy loading not currently used, could use a rewrite
+    function adInView( adId ) {
+        if (!adId || !slotMap.hasOwnProperty(adId)) {
+            return;
+        }
+
+        var element = document.getElementById(adId);
+
+        if (!element) {
+            return;
+        }
+
+        if( !slotMap[adId].lazyLoad || isElementInViewport( element )) {
+            try {
+                googletag.cmd.push( function() {
+                    googletag.display(adId);
+                    slotMap[adId].displayed = true;
+                });
+            } catch(e) {
+                if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+                    Bugsnag.notify(e);
+                }
+            }
+            return;
+        }
+
+        element.className += ' notLoaded';
+
+    }
+
+    $(document).ready(function() {
+        $('.notLoaded').appear();
+
+        $(document.body).on('appear', '.notLoaded',function(event, $all_appeared_elements) {
+            var me = $(this).attr('id');
+            $(this).removeClass('notLoaded');
+            try {
+                googletag.cmd.push(function() {
+                    googletag.display(me);
+                    slotMap[me].displayed = true;
+                });
+            } catch(e) {
+                if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+                    Bugsnag.notify(e);
+                }
+            }
+        });
+    });
+
+    function isElementInViewport (el) {
+        //special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+
+        var rect = el.getBoundingClientRect();
+
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+
+    if(typeof window.opt_disableAds === 'undefined' || window.opt_disableAds == false) { // allow optimizely to disable ads
+        try {
+            googletag.cmd.push(function() {
+                                    googletag.pubads().collapseEmptyDivs( true );
+                
+                                    googletag.pubads().disableInitialLoad();
+                
+                googletag.pubads().enableAsyncRendering();
+                googletag.enableServices();
+            });
+        } catch(e) {
+            if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+                Bugsnag.notify(e);
+            }
+        }
+    }
+
+    $(document).ready(function(){
+        if ( isUserGrazer() && window.segmentation.grazers ) {
+            hideElement( '.l-article-downpage-recommended');
+            hideElement( '#taboola-below-article-text-links');
+            activate( '.grazers' );
+        } else {
+            hideElement( '#taboola-below-article-thumbnails-2nd');
+            activate( '.inline-ad.standard' );
+        }
+    });
+
+    function activate( selector ) {
+        $(selector).each(function() {
+            var me = $(this).attr('id');
+            if(me) {
+                adInView(me);
+            }
+        });
+    }
+
+    function hideElement( selector ) {
+        $(selector).each(function() {
+            $(this).hide();
+        });
+    }
+
+</script>
+      <script type="text/javascript" src="//localhost:3000/static/js/ads/base.js?d=1525991920"></script>
+        
+          <script type="text/javascript" src="//localhost:3000/static/js/st.welcome.js?d=1474911187"></script>
+    
+    
+  
+    <script src="//localhost:3000/static/js/ads/article.js?d=1523548630"></script>
+          	    <link rel="stylesheet" href="//localhost:3000/static/vendor/swiper/dist/idangerous.swiper.css?d=1523548612">
+    <link rel="stylesheet" href="//localhost:3000/static/vendor/magnific-popup/dist/magnific-popup.css?d=1523548612">
+
+
+	
+				 	
+ 	<link rel="stylesheet" href="http://static.startribune.com/news/projects/all/superior-landing-page/styles.bundle.css?d=20180802143730">
+      <script type="text/javascript">
+        var st_page_obj = {"story_id":"485943391","title":"Gifts amid the grind","primary_section_path":"\/"};
+    </script>
+
+    <script type="text/javascript">
+        var omnitureVersion = '/JS-2.9.0/';
+    </script>
+</head>
+<body class=" page-article wide-body"><script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
+//]]></script>
+
+
+
+
+            <script type="text/javascript" src="//localhost:3000/static/js/ads/interstitial.js?d=1531154840"></script>
+<div id="intWrap" style="display: none;">
+    <div id="div-gpt-ad-premium-7932-interstitial" data-cb-ad-id="interstitial">
+        <script type='text/javascript'>
+          if (!window.disableOOP) {
+            try {
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-premium-7932-interstitial'); });
+            } catch(e) {
+              if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+                Bugsnag.notify(e);
+              }
+            }
+          }
+        </script>
+    </div>
+</div>
+        <div id="zone-none-outofpage">
+      <script type="text/javascript">
+        if (!window.disableOOP) {
+          try {
+            googletag.cmd.push(function() { googletag.display( 'zone-none-outofpage' ); });
+          } catch(e) {
+            if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+              Bugsnag.notify(e);
+            }
+          }
+        }
+      </script>
+    </div>
+            <div id="fixed_leader" class="stickyAd_100x90">
+  <div id="div-gpt-ad-premium-7932-hover">
+    <script type='text/javascript'>
+      if(!isWelcomeShowing()) {
+        try {
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-premium-7932-hover'); });
+        } catch(e) {
+          if( !(e instanceof TypeError) && !(e instanceof ReferenceError) && typeof Bugsnag !== 'undefined' ) {
+            Bugsnag.notify(e);
+          }
+        }
+      }
+    </script>
+  </div>
+</div>
+<style type="text/css">
+  .stickyAd_100x90 {
+    position:fixed;
+    z-index:100000000;
+    width:100px;
+    bottom:0;
+    left:50%;
+    margin-left:-608px;
+    _position:absolute;
+    _top:expression(eval(document.documentElement.scrollTop+(document.documentElement.clientHeight-this.offsetHeight)));
+  }
+</style>
+    
+            
+<!-- Start Omniture Tag -->
+<script type="text/javascript">
+    //For omniture impressions. We don't want to access s until the very end.
+    var impression_data = [];
+
+    function analyticsClickTracking($this, linkname, linktype, modulename, moduletype, positions, custom) {
+        // IE8 throws error on console.log
+        // console.log("Click event triggered");
+        linkname = typeof linkname !== 'undefined' ? linkname : null;
+        if ($this !== false && linkname == null) {
+            linkname = $this.data('linkname');
+        }
+        //If linkname doesn't exist, don't bother with the rest
+        if (typeof linkname !== 'undefined' && linkname !== null && linkname !== '') {
+            linktype = typeof linktype !== 'undefined' ? linktype : null;
+            if ($this !== false && linktype == null) {
+                linktype = $this.data('linktype');
+            }
+            var events = [
+                'event3'
+            ];
+
+            custom = typeof custom !== 'undefined' ? custom : {};
+            custom.events = typeof custom.events !== 'undefined' ? custom.events : '';
+            var customEvents = custom.events !== '' ? custom.events : null;
+            if ($this !== false && customEvents == null) {
+                 customEvents = $this.data('customevents');
+            }
+            if (customEvents !== null && customEvents !== '' && typeof customEvents  !== 'undefined') {
+                customEvents = customEvents.split(',');
+                for (var i = 0; i < customEvents.length; i++) {
+                    switch (customEvents[i]) {
+                        case 'search-featured-click':
+                            events.push('event56');
+                            break;
+                        case 'search-click':
+                            events.push('event55');
+
+                            break;
+                        case 'share-click':
+                            events.push('event10');
+                            var share = "+1";
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+
+
+            var modulename = typeof modulename !== 'undefined' ? modulename : null;
+            if ($this !== false && modulename == null) {
+                modulename = $this.data('modulename');
+            }
+            var moduletype = typeof moduletype !== 'undefined' ? moduletype.split('-') : null;
+            if ($this !== false && moduletype == null && typeof $this.data('moduletype') !== 'undefined') {
+                moduletype = $this.data('moduletype').split('-');
+            } else if (moduletype == null) {
+                moduletype = '-'.split('-');
+            }
+            var zonetype = moduletype.shift();
+            moduletype = moduletype.join('-');
+            var positions = typeof positions !== 'undefined' ? positions.split('-') : null;
+            if ($this !== false && positions == null && typeof $this.data('position') !== 'undefined') {
+                positions = $this.data('position').split('-');
+            } else if (positions == null) {
+                positions = '0-0'.split('-');
+            }
+            var modulePosition = positions.shift();
+            var linkPosition = positions.shift();
+            if (isNaN(Number(linkPosition))) {
+                modulePosition += '-' + linkPosition;
+                linkPosition = positions.shift();
+            }
+            if (positions.length) {
+                linkPosition += '-' + positions.join('-');
+            }
+            var key = zonetype + '-' + moduletype + '-' + modulename;
+            var contentType = '';
+            if ( $this !== false && $this.data('contenttype') ) {
+                contentType = $this.data('contenttype');
+            }
+            var vars = {
+                'key':key,
+                'linkname':linkname,
+                'linktype':linktype,
+                'modulename':modulename,
+                'moduletype':moduletype,
+                'zonetype':zonetype,
+                'contentType':contentType,
+                'modulePosition':modulePosition,
+                'linkPosition':linkPosition,
+                'events':events,
+            };
+            if (typeof share !== 'undefined') {
+                vars['share'] = share;
+            }
+            trackClick( vars );
+        }
+    }
+</script>
+<!-- End Omniture Tag -->
+
+
+<!-- Start Chartbeat Tag -->
+<script type="text/javascript">
+    var _sf_async_config = {
+      uid: 19787,
+      domain: 'startribune.com',
+      playerdomain: window.location.hostname,
+      useCanonical: true,
+      flickerControl: false,
+      autoDetect: false
+    };
+    if ( typeof isHome !== 'undefined' &&
+        isHome &&
+        window.location.href.indexOf( 'refresh=true' ) > -1 &&
+        window.location.pathname === '/'
+    ) {
+        _sf_async_config.useCanonical = false;
+        _sf_async_config.path = window.location.pathname + '?refresh=true';
+    }
+    var _sf_startpt = ( new Date() ).getTime();
+
+    var svi = readCookie('s_vi');
+    if (svi.indexOf('[CS]') === 0) {
+        _sf_async_config.type = svi.slice(7, svi.length - 4);
+    }
+</script>
+<script async src="//static.chartbeat.com/js/chartbeat_mab.js"></script>
+<!-- End Chartbeat Tag -->
+
+
+<!-- Start Quantcast Tag -->
+<script type="text/javascript">
+    _qoptions={
+    qacct:"p-0fEc9CMkDiJ2g"
+    };
+</script>
+<script type="text/javascript" src="https://edge.quantserve.com/quant.js"></script>
+<noscript>
+    <img src="http://pixel.quantserve.com/pixel/p-0fEc9CMkDiJ2g.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast Tag -->
+
+
+    <!-- Begin comScore Tag -->
+    <script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "8428425" });
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/p?c1=2&c2=8428425&cv=2.0&cj=1" alt=""/>
+    </noscript>
+    <!-- End comScore Tag -->
+
+
+
+    
+    <div class="l-container">
+
+      <div class="global-nav-mod js-global-nav-mod">
+        	      </div>
+
+                        
+    
+                
+    	
+    
+    							<div class="hero-override"><div class="strib-styles ssa ssb ssc"> <section class="hero" id="hero"> <div class="topNavBar"> <a href="http://www.startribune.com"> <div class="strib"></div> </a> <div class="sponsor"> </div> </div> <div class="title-card"> <a href="/x/485943941?preview=1"><h1>Feeling Superior</h1></a> </div> <video autoplay="autoplay" muted loop="loop" id="heroVideo"> <source src="http://static.startribune.com/video/HERO-joysuffering-final.mp4" type="video/mp4"> </video> </section> <section id="mobile-hero" class="mobile-hero mobile"> <div class="topNavBar"> <a href="http://www.startribune.com"> <div class="strib"></div> </a> <div class="sponsor"> </div> </div> <div class="title-card"> <a href="/x/485943941?preview=1"><h1>Feeling Superior</h1></a> </div> </section> <h4 class="mobile home-logo"> <a href="http://m.startribune.com">Star Tribune</a> </h4>
+</div></div><script type="text/javascript" src="	//localhost:3000/assets/js/libs/imgix.min.js
+"></script>
+	<script>
+		imgix.onready(function() {
+			imgix.fluid({
+				updateOnResizeDown: true,
+				pixelStep: 5,
+				autoInsertCSSBestPractices: true
+			});
+		});
+	</script>
+	
+    <div class="l-article-container " itemscope itemtype="http://schema.org/Article">
+             <div class="l-section-container clearfix">
+                </div>
+                            <div class="l-article article p402_premium article">
+                                                                                 <div class="l-article-body wide">
+                                                                                                               
+                    
+                    	
+	
+					 				<div class="strib-styles ssa ssb ssc"> <div class="label">PART 4: SUFFERING AND JOY</div><h1>Gifts amid the grind</h1> <div class="byline"> <address>By <a rel="author" href="/486590301">Melanie Radzicki McManus</a> - Special to the Star Tribune  •  Photos/video by <a rel="photographer" href="/10645641">Brian Peterson</a><span class="spacer-alt"></span> <time pubdate datetime="2017-07-30T16:00:00">August 3, 2018 — 12:00am</time> </div> 	<aside class="article-share">
+                                <div class="share__textsize">
+                <a id="js-textsize-btn"
+                   data-linkname="Text size"
+                   data-linktype="text-resize"
+                   data-modulename="Article"
+                   data-moduletype="-"
+                   data-position="-1-share">
+                    <div class="share-icon"></div>
+                    <div class="share-label">
+                        <span>Text size</span>
+                    </div>
+                </a>
+            </div>
+            
+                        <div class="share__comments clickQS">
+                <a href="#comments"
+                   data-linkname="Comment on this story"
+                   data-linktype="share-comment"
+                   data-modulename="Article"
+                   data-moduletype="-"
+                   data-position="-1-share">
+                    <div class="share-icon"></div>
+                    <div class="share-label">
+                        <span class="share-txt">comment</span><span class="share-count"></span>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="share__facebook clickQS">
+            <a class="st-share-link" data-st-share-count-selector=".share-count-facebook"
+               data-st-share-service="facebook"
+               data-st-share-url="http://strib.mn/2lLjIB7" target="_blank"
+               data-linkname="Share on Facebook"
+               data-linktype="share-facebook"
+               data-modulename="Article"
+               data-moduletype="-"
+               data-position="-1-share"
+               data-customevents="share-click">
+                <div class="share-icon"></div>
+                <div class="share-label">
+                    <span class="share-txt">share</span><span class="share-count-facebook"></span>
+                </div>
+            </a>
+        </div>
+    
+            <div class="share__twitter clickQS">
+            <a class="st-share-link" data-st-share-count-selector=".share-count-twitter"
+               data-st-share-image="http://stmedia.startribune.com/images/ows_153176230143868.jpg"
+               data-st-share-title="Gifts amid the grind"
+               data-st-share-service="twitter" data-st-share-url="http://strib.mn/2lLjIB7"
+               data-st-count-url="http://www.startribune.com/owtrail080318/485943391/"
+               target="_blank"
+               data-linkname="Share on Twitter"
+               data-linktype="share-twitter"
+               data-modulename="Article"
+               data-moduletype="-"
+               data-position="-1-share"
+               data-customevents="share-click">
+                <div class="share-icon"></div>
+                <div class="share-label">
+                    <span class="share-txt">tweet</span><span class="share-count-twitter"></span>
+                </div>
+            </a>
+        </div>
+    
+            <div class="share__email clickQS">
+            <a class="st-share-link" data-st-share-service="email" data-st-share-url="//localhost:3000/email/share/content/?section=%2Fprotected&amp;story_id=485943391&amp;headline=Gifts+amid+the+grind"
+               data-id="485943391"
+               data-linkname="Email"
+               data-linktype="share-email"
+               data-modulename="Article"
+               data-moduletype="-"
+               data-position="-1-share"
+               data-customevents="share-click">
+                <div class="share-icon"></div>
+                <div class="share-label">
+                    <span>email</span>
+                </div>
+            </a>
+        </div>
+    
+            <div class="share__print clickQS">
+            <a id="js-print-btn"
+               data-linkname="Print"
+               data-linktype="share-print"
+               data-modulename="Article"
+               data-moduletype="-"
+               data-position="-1-share"
+               data-customevents="share-click">
+                <div class="share-icon"></div>
+                <div class="share-label">
+                    <span>Print</span>
+                </div>
+            </a>
+        </div>
+    
+            <div class="share-more">
+            <div class="share-label">more</div>
+            <div class="share-more-popover">
+                <div class="share-more-group">
+                    <span class="share-more-label">Share on:</span>
+                    <a class="st-share-link linkedin-pw-placeholder" data-st-share-service="linkedin"
+                       data-st-share-url="http://strib.mn/2lLjIB7"
+                       data-st-share-title="Gifts amid the grind"
+                       data-st-share-summary=""
+                       data-st-share-source="Star Tribune" target="_blank"
+                       data-linkname="Share on LinkedIn"
+                       data-linktype="share-linkedin"
+                       data-modulename="Article"
+                       data-moduletype="-"
+                       data-position="-1-share"
+                       data-customevents="share-click">
+                        <span class="share-more-icon share__linkedin">Share on LinkedIn</span>
+                    </a>
+                    <a class="st-share-link googleplus-pw-placeholder" data-st-share-service="googleplus"
+                       data-st-share-url="http://strib.mn/2lLjIB7" target="_blank"
+                       data-linkname="Share on Google+"
+                       data-linktype="share-linkedin"
+                       data-modulename="Article"
+                       data-moduletype="-"
+                       data-position="-1-share"
+                       data-customevents="share-click">
+                        <span class="share-more-icon share__googleplus">Share on Google+</span>
+                    </a>
+                    <a class="st-share-link pinterest-pw-placeholder" data-st-share-service="pinterest"
+                       data-st-share-image="http://stmedia.startribune.com/images/ows_153176230143868.jpg"
+                       data-st-share-description=""
+                       data-st-share-url="http://strib.mn/2lLjIB7" target="_blank"
+                       data-linkname="Share on Pinterest"
+                       data-linktype="share-pinterest"
+                       data-modulename="Article"
+                       data-moduletype="-"
+                       data-position="-1-share"
+                       data-customevents="share-click">
+                        <span class="share-more-icon share__pinterest">Share on Pinterest</span>
+                    </a>
+                </div>
+                <div class="share-more-group">
+                    <span class="share-more-label">Copy shortlink:</span>
+                    <input class="share-more-link-input" id="MoreShortlink" type="text"
+                           value="http://strib.mn/2lLjIB7" />
+                </div>
+                <div class="share-more-group">
+                    <span class="share-more-label">Purchase:</span>
+                                        <a href="http://reprints.ygsgroup.com/m/startribune/" target="_blank"
+                       class="share-more-tool tool__orderreprint"
+                       data-linkname="Order Reprint"
+                       data-linktype="share-reprint"
+                       data-modulename="Article"
+                       data-moduletype="-"
+                       data-position="-1-share">
+                        Order Reprint
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+</aside>
+ <section class="container-lg">
+	
+	
+	    
+        
+    
+            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                    
+                            <div class="storyBlock Day4">
+<div data-strib-tag="text">    <p></p>
+
+                                                                                          
+                                                    
+    
+                            <div class="summaryBlockReefers desktop">
+<div class="mapReefer"><a href="/x/485934211" _fcksavedurl="/x/485934211"><img src="http://stmedia.startribune.com/images/superior-map-thumb.png" _fcksavedurl="http://stmedia.startribune.com/images/superior-map-thumb.png"><h4>INTERACTIVE MAP</h4> View dispatches from Melanie’s 20-day hike</a></div>
+<div class="galleryReefer"><a href="/x/486590611" _fcksavedurl="/x/486590611"><h4>GALLERIES</h4> Explore Superior Trail in photos and videos</a></div>
+<div class="biosReefer"><a href="/x/486590301" _fcksavedurl="/x/486590301"><h4>OUR STORYTELLERS</h4> Meet the Star Tribune team on the trail</a></div>
+</div>
+</div>
+<p class="drop-caps Text_Body">Drops of sweat gathered on my brow as I picked my way up the northeastern side of the Temperance River. It was Day 13 and slow-going; the path climbs nearly 1,000 feet from the riverbed to the summit of Carlton Peak some 3½ miles away. An hour into my trek, I rounded a bend and spotted a groundhog sitting in the middle of the trail. Fishing out my phone, I willed it to stay in place so I could take some pictures. The animal complied, looking as if it was quite used to photo shoots.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">But then, as I tucked my phone back in its pouch and began to advance down the trail, the plump rodent’s demeanor changed. It began snapping its long, front teeth at me, the fur on its shoulders puffing out in indignation. Was this a mother protecting her young? I hadn’t seen any babies, nor heard squeaks or scuffles coming from the vegetation.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">“I don’t want any trouble,” I called out, trying again to move forward. “I just want to get by.”</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">The furry herbivore backed up one step, then stopped and turned its head away from me, as if to indicate it couldn’t hear me, or didn’t care what I was saying.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">“Leave me alone. I just want to keep hiking,” I said, making little clucking noises to induce it to move. Nothing.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">Changing tactics, I thrust my trekking poles overhead, shouting, “Ah! Rah! I’m a big scary thing!” Then I blasted a sharp note on my emergency whistle. “Out of the way! I’m a big, bad, scary hiker!” Tweet! TWEET!” The animal shuffled a little but held its ground.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">For the next 20 minutes, I tried everything I could think of to get the groundhog to step aside and let me pass. I tossed sticks, stomped on the ground, waved my trekking poles, yelled. But it stayed put, snapping its yellowed incisors at me whenever I got too close. What to do?</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">I couldn’t stand here all day. It would take too much time to backtrack down to Hwy. 61 and hike around this segment. No other hikers were around to assist. Then my hand touched something hard in my pack’s front pouch — a canister of mace. I’d never used mace before. But now, fearing I was squaring off with a rabid animal, I took aim and pressed the button. A stream of red fluid shot out and the groundhog flew into the bushes with a squeal. I raced past and down the trail.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">Less than an hour later, I was standing on the summit of Carlton Peak, a billion-year-old slab of whitish rock rising 1,500 feet skyward. A popular hiking destination, it offers prime vistas of Lake Superior. But my groundhog encounter, coupled with the day’s heat and some minor wrong turns trying to reach the summit, put me in a foul mood. I gave the charming view but a cursory glance before stomping downhill and on toward Oberg Mountain.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">That evening, checking into a Tofte motel, I bumped into thru-hikers BlueBerry and Green Tortuga. They, too, were finding the trail tough. BlueBerry, in particular, was having a hard time dealing with the bugs at camp. So they were staying in town and taking a “zero day” tomorrow, trail-speak for a day off. Like me, they’d also decided to slow their pace.</p>
+
+                                                                                          
+                                                    
+    
+                            <div class="photo-package photo-package-1">
+<div data-strib-tag="image">
+
+
+ 		
+		
+		
+		
+		
+
+ 	
+	
+
+							
+
+
+ 
+ 	
+  
+	
+								
+	
+		
+		<div class="related-media photo1 size-m">
+
+			
+						<script type="text/javascript">
+				if (typeof galleryQueryStrings === 'undefined') {
+				var galleryQueryStrings = {};
+				}
+			</script><script type="text/javascript">
+				galleryQueryStrings[''] = JSON.parse('{"pageName":"pageName=Gifts%20amid%20the%20grind","channel":"channel=Photo Gallery","server":"server=startribune.com","prop1":"c1=","prop2":"c2=Development","prop3":"c3=Photo","prop4":"c4=Photo Gallery","prop5":"c5=","prop7":"c7=Photography","prop12":"c12=","prop15":"c15=","prop16":"c16=","prop24":"c24=Photo Gallery","prop31":"c31=Related%20Article%20Single%20Image","prop33":"c33=","prop64":"c64=","prop71":"c71=websites"}');
+			</script><a href="http://stmedia.stimg.co/superior_day4_hike2.jpg" class="js-image-modal image-modal-link" title="" data-modal-caption="" data-modal-byline="Brian Peterson" data-linkname="" data-linktype="related image" data-modulename="" data-moduletype="-" data-position="-" data-analytics-url="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0/95696" data-analytics-querystring="pageName=Gifts%20amid%20the%20grind&amp;channel=Photo Gallery&amp;server=startribune.com&amp;c1=&amp;c2=Development&amp;c3=Photo&amp;c4=Photo Gallery&amp;c5=&amp;c7=Photography&amp;c12=&amp;c15=&amp;c16=&amp;c24=Photo Gallery&amp;c31=Related%20Article%20Single%20Image&amp;c33=&amp;c64=&amp;c71=websites">
+				<div class="expand-icn-wrapper">
+					<img src="http://stmedia.stimg.co/superior_day4_hike2.jpg?fit=crop&amp;crop=faces&amp;w=525" alt="">
+</div>
+			</a>
+						<script type="text/javascript">
+				<!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//-->
+			</script><noscript>
+				<img src="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0--NS/44155?pageName=Gifts%20amid%20the%20grind&amp;channel=Photo%20Gallery&amp;server=startribune.com&amp;c1=&amp;c2=Development&amp;c3=Photo&amp;c4=Photo%20Gallery&amp;c5=noscript&amp;c7=Photography&amp;c12=&amp;c15=&amp;c16=&amp;c24=Photo%20Gallery&amp;c31=Related%20Article%20Single%20Image&amp;c33=&amp;c64=&amp;c71=websites" height="1" width="1" border="0" alt="">
+</noscript>
+<!--/DO NOT REMOVE/-->
+			<img class="gallery-image-tracking" style="position:absolute;left:-2000px;height:0px;" alt="" src="http://apps.startribune.com/circulars/images/blank.gif"><div class="related-byline">Brian Peterson</div>
+								</div>
+	
+</div>
+<div data-strib-tag="image">
+
+
+ 		
+		
+		
+		
+		
+
+ 	
+	
+
+							
+
+
+ 
+ 	
+  
+	
+								
+	
+		
+		<div class="related-media photo2 size-m">
+
+			
+						<script type="text/javascript">
+				if (typeof galleryQueryStrings === 'undefined') {
+				var galleryQueryStrings = {};
+				}
+			</script><script type="text/javascript">
+				galleryQueryStrings[''] = JSON.parse('{"pageName":"pageName=Gifts%20amid%20the%20grind","channel":"channel=Photo Gallery","server":"server=startribune.com","prop1":"c1=","prop2":"c2=Development","prop3":"c3=Photo","prop4":"c4=Photo Gallery","prop5":"c5=","prop7":"c7=Photography","prop12":"c12=","prop15":"c15=","prop16":"c16=","prop24":"c24=Photo Gallery","prop31":"c31=Related%20Article%20Single%20Image","prop33":"c33=","prop64":"c64=","prop71":"c71=websites"}');
+			</script><a href="http://stmedia.stimg.co/superior_day4_foot.jpg" class="js-image-modal image-modal-link" title="" data-modal-caption="" data-modal-byline="Brian Peterson" data-linkname="" data-linktype="related image" data-modulename="" data-moduletype="-" data-position="-" data-analytics-url="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0/76083" data-analytics-querystring="pageName=Gifts%20amid%20the%20grind&amp;channel=Photo Gallery&amp;server=startribune.com&amp;c1=&amp;c2=Development&amp;c3=Photo&amp;c4=Photo Gallery&amp;c5=&amp;c7=Photography&amp;c12=&amp;c15=&amp;c16=&amp;c24=Photo Gallery&amp;c31=Related%20Article%20Single%20Image&amp;c33=&amp;c64=&amp;c71=websites">
+				<div class="expand-icn-wrapper">
+					<img src="http://stmedia.stimg.co/superior_day4_foot.jpg?fit=crop&amp;crop=faces&amp;w=525" alt="">
+</div>
+			</a>
+						<script type="text/javascript">
+				<!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//-->
+			</script><noscript>
+				<img src="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0--NS/4895?pageName=Gifts%20amid%20the%20grind&amp;channel=Photo%20Gallery&amp;server=startribune.com&amp;c1=&amp;c2=Development&amp;c3=Photo&amp;c4=Photo%20Gallery&amp;c5=noscript&amp;c7=Photography&amp;c12=&amp;c15=&amp;c16=&amp;c24=Photo%20Gallery&amp;c31=Related%20Article%20Single%20Image&amp;c33=&amp;c64=&amp;c71=websites" height="1" width="1" border="0" alt="">
+</noscript>
+<!--/DO NOT REMOVE/-->
+			<img class="gallery-image-tracking" style="position:absolute;left:-2000px;height:0px;" alt="" src="http://apps.startribune.com/circulars/images/blank.gif"><div class="related-byline">Brian Peterson</div>
+								</div>
+	
+</div>
+<div data-strib-tag="image">
+
+
+ 		
+		
+		
+		
+		
+
+ 	
+	
+
+							
+
+
+ 
+ 	
+  
+	
+								
+	
+		
+		<div class="related-media photo3 size-m">
+
+			
+						<script type="text/javascript">
+				if (typeof galleryQueryStrings === 'undefined') {
+				var galleryQueryStrings = {};
+				}
+			</script><script type="text/javascript">
+				galleryQueryStrings[''] = JSON.parse('{"pageName":"pageName=Gifts%20amid%20the%20grind","channel":"channel=Photo Gallery","server":"server=startribune.com","prop1":"c1=","prop2":"c2=Development","prop3":"c3=Photo","prop4":"c4=Photo Gallery","prop5":"c5=","prop7":"c7=Photography","prop12":"c12=","prop15":"c15=","prop16":"c16=","prop24":"c24=Photo Gallery","prop31":"c31=Related%20Article%20Single%20Image","prop33":"c33=","prop64":"c64=","prop71":"c71=websites"}');
+			</script><a href="http://stmedia.stimg.co/superior_day4_fire.jpg" class="js-image-modal image-modal-link" title="" data-modal-caption="" data-modal-byline="Brian Peterson" data-linkname="" data-linktype="related image" data-modulename="" data-moduletype="-" data-position="-" data-analytics-url="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0/48336" data-analytics-querystring="pageName=Gifts%20amid%20the%20grind&amp;channel=Photo Gallery&amp;server=startribune.com&amp;c1=&amp;c2=Development&amp;c3=Photo&amp;c4=Photo Gallery&amp;c5=&amp;c7=Photography&amp;c12=&amp;c15=&amp;c16=&amp;c24=Photo Gallery&amp;c31=Related%20Article%20Single%20Image&amp;c33=&amp;c64=&amp;c71=websites">
+				<div class="expand-icn-wrapper">
+					<img src="http://stmedia.stimg.co/superior_day4_fire.jpg?fit=crop&amp;crop=faces&amp;w=525" alt="">
+</div>
+			</a>
+						<script type="text/javascript">
+				<!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//-->
+			</script><noscript>
+				<img src="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0--NS/6967?pageName=Gifts%20amid%20the%20grind&amp;channel=Photo%20Gallery&amp;server=startribune.com&amp;c1=&amp;c2=Development&amp;c3=Photo&amp;c4=Photo%20Gallery&amp;c5=noscript&amp;c7=Photography&amp;c12=&amp;c15=&amp;c16=&amp;c24=Photo%20Gallery&amp;c31=Related%20Article%20Single%20Image&amp;c33=&amp;c64=&amp;c71=websites" height="1" width="1" border="0" alt="">
+</noscript>
+<!--/DO NOT REMOVE/-->
+			<img class="gallery-image-tracking" style="position:absolute;left:-2000px;height:0px;" alt="" src="http://apps.startribune.com/circulars/images/blank.gif"><div class="related-byline">Brian Peterson</div>
+								</div>
+	
+</div>
+<div data-strib-tag="text">    <p></p>
+
+                                                                                          
+                                                    
+    
+                            <div class="package-byline ">Photos by Brian Peterson, Star Tribune </div> <div class="related-caption package-caption ">
+<span class="readin">GETTING ADJUSTED: </span> Melanie Radzicki McManus said footing — be it mud or rocks or tree roots — was one of the biggest challenges on her thru-hike. She made sure to take time to prepare and recover.</div>
+</div>
+</div>
+<h3>Simple joys erase the pain</h3>
+<p class="Text_Body">Harriet Quarles met me at the fog-enshrouded parking lot off Caribou Trail the next morning, ready to shuttle me back to Oberg Mountain, my starting point today. A petite older woman wearing jeans and a plaid shirt, she was as colorful as the pink stripe running through her hair. As we rumbled along, she told me her story.</p>
+
+                                                                                          
+                                                    
+    
+                            <div data-strib-tag="text">    <p></p>
+
+                                                                                          
+                                                    
+    
+                            <div class="tipsAccordion">
+<h3>Melanie’s hiking tips</h3>
+<p>After hiking 5,500 miles over the last several years, Melanie Radzicki McManus has learned a thing or two. Here are some of her best practices:</p>
+
+                                                                                          
+                                                    
+    
+                            <h4 class="accordionMenu">Create a flexible plan.</h4>
+<div class="content"><p>Plan where you’ll start and stop hiking each day, but also target an earlier campsite or trailhead in case the going gets tough. When it comes to challenging paths, you may not get as far as you normally do. Also wise: Start out with low-mile days, then build up from there.</p>
+
+                                                                                          
+                                                    
+    
+                            </div>
+<h4 class="accordionMenu">Use trekking poles.</h4>
+<div class="content"><p>Trekking poles are multipurpose tools every hiker should have. They take pressure off of your knees, legs, ankles and feet, and allow you to move more quickly and easily, especially when heading uphill or downhill. They can also be used for balance, to gauge how deep a water crossing is and to push aside thorny vegetation. And using them on a warm day ensures your hands and fingers won’t swell, as they keep them parallel to the ground, not pointed down.</p>
+
+                                                                                          
+                                                    
+    
+                            </div>
+<h4 class="accordionMenu">Bring zip-top bags.</h4>
+<div class="content"><p>Use them to securely hold items such as used hand wipes and food wrappers, or your cell phone if it begins to rain.</p>
+
+                                                                                          
+                                                    
+    
+                            </div>
+<h4 class="accordionMenu">Consider compression sleeves.</h4>
+<div class="content"><p>Compression garments can be worn on your calves and arms. Calf sleeves protect your lower legs from the majority of scruffy vegetation while being cooler than pants. Arm sleeves are great for days when the temperature varies. Pull them up when chilly and roll them down when it’s warm.</p>
+
+                                                                                          
+                                                    
+    
+                            </div>
+<h4 class="accordionMenu">Carry lubricant.</h4>
+<div class="content"><p>Whether you prefer petroleum jelly or a commercial product such as Body Glide, slather it on anywhere you develop hot spots. Keep it handy after it rains or you complete a water crossing, as wet shorts can lead to serious chafing. Also good to have: lip balm.</p>
+
+                                                                                          
+                                                    
+    
+                            </div>
+<h4 class="accordionMenu">Don’t forget carabiners.</h4>
+<div class="content"><p>Carabiners are great at securing items to your pack such as car keys, water bottles and sandals. At night, use them to create a laundry line.</p>
+
+                                                                                          
+                                                    
+    
+                            </div>
+</div>
+</div>
+<p class="Text_Body">Harriet and her husband worked for years as truckers. Based in the South, they eventually settled on the North Shore during the summers, where they repaired and serviced recreational vehicles. Now widowed, Harriet operated a taxi service every summer, mainly shuttling hikers on and off the Superior Hiking Trail’s northern reaches. Her bright blue business fliers were tucked at every trailhead — she knew them all by heart — and about 75 percent of her business involved bailouts — that is, rescuing hikers who were calling it quits because they’d overestimated their abilities, underestimated the trail or both.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">“You wouldn’t believe some of the questions I get from unprepared hikers,” she said, noting one woman asked how many cellphone charging stations were placed along the trail. “Ha!” she snorted. “Sure, there’s one every three miles.” More than a few hikers alight from her van and begin marching the wrong way down the trail. “I have to chase after a lot of people and point them in the right direction,” she said. Before slipping onto the trail, I assured Harriet — who would be shuttling me the next few days — that I wouldn’t be bailing or accidentally heading southbound.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">So while BlueBerry and Green Tortuga were buying more snacks, poking around Tofte and lazing in their motel room, I trod through rain, then stifling heat and humidity. I also endured mud and searing climbs, scruffy vegetation and standing water. This trail was never going to be easy. But then, near day’s end, I spotted a beaver. It was lazily swimming around Lake Agnes, a large V spreading in its wake. It ventured so close to shore I could see its tiny, rounded ears, black jelly-bean nose and the rivulets of water running down its back. Without warning, it dove underwater with a great thwacking of its paddle-like tail, sending concentric circles spreading across the lake’s smooth surface.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">“Wow,” I whispered. “That was so cool.”</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">And this is why I hike. Yes, the miles are often long and rugged. There are times I wonder why I’m putting myself through blisters and sunburn, mud and water, aching body parts and scratched flesh. Then the trail reminds me — it’s the little gifts along the way.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">Today’s present was the beaver. Yesterday it was the smiley face carved into the end of a downed tree. Earlier, it was twin wild roses that appeared trail-side, two cheery, pink dots puncturing the day’s dreary haze. Memories of the trail’s rewards began popping into my mind like fireworks: the newly hatched dragonfly drying its wings atop a slender, purple lupine; the collection of cairns I stumbled upon, artistically stacked on large, flat stones in a rushing creek; the pride I felt after conquering a tough climb; the novelty of washing up at night in a tiny stream; and, every day, listening to a cacophony of joyous melodies. The black-capped chickadees’ fee-bee song. The white-throated sparrows’ triplet-laden tunes. The woodpeckers’ staccato beats. Even the ravens’ harsh screeching was captivating.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">That evening, dining with BlueBerry and Green Tortuga, we swapped tales of the trail and griped lightheartedly about the endless bugs, mud and rain. Although we agreed fall would have been a better season to tackle this trail, none of us was sorry we were right here, right now.</p>
+
+                                                                                          
+                                                    
+    
+                            <p class="Text_Body">The previous day, BlueBerry told me that even though he had never written a poem before, he wanted to write one about the Superior Hiking Trail after he finished. I’d love to read it if he does.</p>
+
+                                                                                          
+                                                    
+    
+                            <div data-strib-tag="gallery">						 
+							<div class="article-featured-gallery-mod day4-gallery488422141 size-xl">
+                                                                                <script type="text/javascript">
+      if (typeof galleryAnalytics === 'undefined') {
+          var galleryAnalytics = JSON.parse('{"pageName":"pageName=A%20thru-hike%20of%20suffering%20and%20joy","channel":"channel=","server":"server=startribune.com","prop2":"c2=Development","prop3":"c3=Photo","prop4":"c4=Photo Gallery","prop5":"c5=","prop7":"c7=Photography","prop12":"c12=","prop15":"c15=","prop16":"c16=","prop20":"c20=","prop24":"c24=Photo Gallery","prop25":"c25=488422141","prop31":"c31=Solitary%20Photo%20Gallery","prop33":"c33=","prop46":"c46=","prop64":"c64=","prop71":"c71=websites","eVar92":"v92=08-02-2018"}')
+      }
+    </script><div id="strib-gallery-488422141">
+                                                                                                                                                                                                                                                            <script type="text/javascript">
+            StarTribune.react.gallery('strib-gallery-488422141', {
+                storyId: '488422141',
+                analytics: galleryAnalytics,
+                moduleName: '',
+                modulePosition: '-0',
+                moduleType: '-',
+                photos: [{"url":"http:\/\/stmedia.startribune.com\/images\/1531852610_30owtrail080318.jpg","resizedUrl":"http:\/\/stmedia.stimg.co\/1531852610_30owtrail080318.jpg?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/1531852610_30owtrail080318.jpg?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/1531852610_30owtrail080318.jpg?w=400","caption":"Melanie Radzicki McManus navigated the rocks that litter the trail to Carlton Peak. Carlton Peak is one of the more challenging climbs on the Superior Hiking Trail and a popular destination for rock climbers.","author":"Brian Peterson","credit":"Star Tribune","altText":"Melanie Radzicki McManus navigated the rocks that litter the trail to Carlton Peak. Carlton Peak is one of the more challenging climbs on the Superior"},{"url":"http:\/\/stmedia.startribune.com\/images\/1531852615_40owtrail080318.jpg","resizedUrl":"http:\/\/stmedia.stimg.co\/1531852615_40owtrail080318.jpg?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/1531852615_40owtrail080318.jpg?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/1531852615_40owtrail080318.jpg?w=400","caption":"A regular sight: a fallen balsam tree to navigate around.","author":"Brian Peterson","credit":"Star Tribune","altText":"A regular sight: a fallen balsam tree to navigate around."},{"url":"http:\/\/stmedia.startribune.com\/images\/1531852434_24owtrail080318.jpg","resizedUrl":"http:\/\/stmedia.stimg.co\/1531852434_24owtrail080318.jpg?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/1531852434_24owtrail080318.jpg?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/1531852434_24owtrail080318.jpg?w=400","caption":"McManus scaled the top of Ely's Peak, west of Duluth.","author":"Brian Peterson","credit":"Star Tribune","altText":"McManus scaled the top of Ely's Peak, west of Duluth."},{"url":"http:\/\/stmedia.startribune.com\/images\/08_1006167032__1120OWTRAIL070618_50219224.JPG","resizedUrl":"http:\/\/stmedia.stimg.co\/08_1006167032__1120OWTRAIL070618_50219224.JPG?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/08_1006167032__1120OWTRAIL070618_50219224.JPG?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/08_1006167032__1120OWTRAIL070618_50219224.JPG?w=400","caption":"Hikers find journal books to communicate with others along the trail or write their impressions along the way. Above in green is a message from Green Tortuga McManus, aka Snowshoe.","author":"Brian Peterson","credit":"Star Tribune","altText":"Hikers find journal books to communicate with others along the trail or write their impressions along the way. Above in green is a message from Green "},{"url":"http:\/\/stmedia.startribune.com\/images\/08_1006167032__1811OWTRAIL070618_50267478.JPG","resizedUrl":"http:\/\/stmedia.stimg.co\/08_1006167032__1811OWTRAIL070618_50267478.JPG?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/08_1006167032__1811OWTRAIL070618_50267478.JPG?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/08_1006167032__1811OWTRAIL070618_50267478.JPG?w=400","caption":"Shuttle driver Harriet Quarles, left, suffers many unprepared hikers. McManus made sure she wasn't one of them.","author":"Brian Peterson","credit":"Star Tribune","altText":"Shuttle driver Harriet Quarles, left, suffers many unprepared hikers. McManus made sure she wasn't one of them."},{"url":"http:\/\/stmedia.startribune.com\/images\/1531852160_11owtrail080318.jpg","resizedUrl":"http:\/\/stmedia.stimg.co\/1531852160_11owtrail080318.jpg?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/1531852160_11owtrail080318.jpg?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/1531852160_11owtrail080318.jpg?w=400","caption":"After arriving in camp at about 8:30 p.m. with a long 20-mile day behind her, McManus rested and cleaned up by the Manitou River. She was exhausted and dehydrated.","author":"Brian Peterson","credit":"Star Tribune","altText":"After arriving in camp at about 8:30 p.m. with a long 20-mile day behind her, McManus rested and cleaned up by the Manitou River. She was exhausted an"},{"url":"http:\/\/stmedia.startribune.com\/images\/1531852257_19owtrail080318.jpg","resizedUrl":"http:\/\/stmedia.stimg.co\/1531852257_19owtrail080318.jpg?w=970&h=740","limitedUrl":"http:\/\/stmedia.stimg.co\/1531852257_19owtrail080318.jpg?w=2000","gridUrl":"http:\/\/stmedia.stimg.co\/1531852257_19owtrail080318.jpg?w=400","caption":"Drinkable breakfast to start the day.","author":"Brian Peterson","credit":"Star Tribune","altText":"Drinkable breakfast to start the day."}],
+                showSocial: !!0,
+                trackingBeaconUrl: 'http://metrics.startribune.com/b/ss/nmminneapolis/1',
+                analyticsVersion: 'JS-2.9.0',
+                storyUrl: 'http://strib.mn/2M8ES7L',
+                canonicalUrl: 'http://www.startribune.com/a-thru-hike-of-suffering-and-joy/488422141/',
+                shareTitle: 'A thru-hike of suffering and joy',
+                useHash: !!1,
+                adStart: 3,
+                adInterval: 5,
+                slotString: window.strib.adConfig.slotString
+            });
+        </script>
+</div>
+</div>
+
+
+	</div>
+<p class="Text_Endnote">Melanie Radzicki McManus is a freelance writer. Her book “Thousand-Miler” chronicles her thru-hike of Wisconsin’s Ice Age National Scenic Trail. She lives near Madison, Wis.</p>
+
+                                                                
+    
+                            </div></p>
+
+                                                                
+    
+    
+	
+							<div class="teases"> <article class="tease"> <header> <a href="/x/485941911?preview=1"> <b>PART 1</b>  July 13 </a> </header> <figure class="tease-photo one"> <a href="/x/485941911?preview=1"> <div class="tease-photo-img"> <video class="thevideo" loop muted preload="none"> <source src="http://static.startribune.com/video/THUMB-water.mp4" type="video/mp4"> </video> </div> </figure> <h1>Water is the story </h1> </a> <div class="tease-summary">Hiking in hypothermic conditions from the start wasn’t the vision.</div> </article> <article class="tease"> <header> <a href="/x/485942462?preview=1"> <b>PART 2</b>  July 20 </a> </header> <figure class="tease-photo two"> <a href="/x/485942462?preview=1"> <div class="tease-photo-img"> <video class="thevideo" loop muted preload="none"> <source src="http://static.startribune.com/video/THUMB-boom.mp4" type="video/mp4"> </video> </div> </figure> <h1>The hiking attraction</h1> </a> <div class="tease-summary">Footpaths like the Superior trail continue to draw more hikers.</div> </article> <article class="tease"> <header> <a href="/x/485942671?preview=1"> <b>PART 3</b>  July 27 </a> </header> <figure class="tease-photo three"> <a href="/x/485942671?preview=1"> <div class="tease-photo-img"> <video class="thevideo" loop muted preload="none"> <source src="http://static.startribune.com/video/THUMB-people.mp4" type="video/mp4"> </video> </div> </figure> <h1>People of the trail</h1> </a> <div class="tease-summary">Lots of hikers -- and lots of stories of why they set out.</div> </article> <article class="tease"> <header> <a href="/x/485943391?preview=1"> <b>PART 4</b>  Aug. 3 </a> </header> <figure class="tease-photo four"> <a href="/x/485943391?preview=1"> <div class="tease-photo-img"> <video class="thevideo" loop muted preload="none"> <source src="http://static.startribune.com/video/THUMB-suffer.mp4" type="video/mp4"> </video> </div> </figure> <h1>Suffering and joy</h1> </a> <div class="tease-summary">For this storyteller, challenges but also wonder.</div> </article> <article class="tease"> <header> <a href="/x/485943601?preview=1"> <b>PART 5</b>  Aug. 11 </a> </header> <figure class="tease-photo five"> <a href="/x/485943601?preview=1"> <div class="tease-photo-img"> <video class="thevideo" loop muted preload="none"> <source src="http://static.startribune.com/video/THUMB-nature.mp4" type="video/mp4"> </video> </div> </figure> <h1>Nature effect</h1> </a> <div class="tease-summary">It’s undeniable -- time in the woods changes us for the better.</div> </article> <article class="tease"> <header> <a href="/x/485943721?preview=1"> <b>PART 6</b>  Aug. 17 </a> </header> <figure class="tease-photo six"> <a href="/x/485943721?preview=1"> <div class="tease-photo-img"> <video class="thevideo" loop muted preload="none"> <source src="http://static.startribune.com/video/THUMB-protect.mp4" type="video/mp4"> </video> </div> </figure> <h1>Serving, protecting</h1> </a> <div class="tease-summary">The North Shore trail is worth the attention it gets.</div> </article>
+</div>
+<div class="teases ads"> <h4>Sponsors</h4> <article class="tease"> <!-- Begin AdSlot Pos1 --> <div id='div-gpt-ad-4205362-1'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-4205362-1'); }); </script> </div> <!-- End AdSlot 1 --> </article> <article class="tease"> <!-- Begin AdSlot Pos2 --> <div id='div-gpt-ad-4205362-2'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-4205362-2'); }); </script> </div> <!-- End AdSlot 2 --> </article> <article class="tease"> <!-- Begin AdSlot Pos3 --> <div id='div-gpt-ad-4205362-3'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-4205362-3'); }); </script> </div> <!-- End AdSlot 3 --> </article> <article class="tease"> <!-- Begin AdSlot Pos4 --> <div id='div-gpt-ad-4205362-4'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-4205362-4'); }); </script> </div> <!-- End AdSlot 4 --> </article> <article class="tease"> <!-- Begin AdSlot Pos5 --> <div id='div-gpt-ad-4205362-5'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-4205362-5'); }); </script> </div> <!-- End AdSlot 5 --> </article> <article class="tease"> <!-- Begin AdSlot Pos6 --> <div id='div-gpt-ad-4205362-6'> <script> googletag.cmd.push(function() { googletag.display('div-gpt-ad-4205362-6'); }); </script> </div> <!-- End AdSlot 6 --> </article>
+</div>
+</section>
+</div>
+	
+
+                    
+                                                                                    <section class="comments-section" id="comments">
+    <script type="text/javascript">
+        if (typeof commentQueryStrings === 'undefined') {
+            var commentQueryStrings = {};
+        }
+    </script>
+    
+    <script type="text/javascript">
+        commentQueryStrings[window.location.pathname] = JSON.parse('{"pageName":"pageName=Gifts%20amid%20the%20grind","channel":"channel=","server":"server=startribune.com","prop1":"c1=http:\/\/localhost:3000\/owtrail080318\/485943391\/","prop2":"c2=Development","prop3":"c3=comments","prop5":"c5=","prop7":"c7=","prop12":"c12=","prop15":"c15=","prop16":"c16=","prop25":"c25=485943391","prop64":"c64=","prop71":"c71=websites"}');
+    </script>
+
+    <div class="comments">
+        <a href="#" class="js-comments-show comments-count-link">
+            <div class="comments-count"></div>
+            <span class="comments-show js-comments-show-txt"
+                  data-analytics-url="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0/27949"
+                  data-analytics-querystring="pageName=Gifts%20amid%20the%20grind&channel=&server=startribune.com&c1=//localhost:3000/owtrail080318/485943391/&c2=Development&c3=comments&c5=&c7=&c12=&c15=&c16=&c25=485943391&c64=&c71=websites">View Comments</span>
+        </a>
+    </div>
+
+    <script src='https://cdn.livefyre.com/Livefyre.js'></script>
+    <script type="text/javascript">
+        var networkConfig = {"network": "startribune.fyre.co"}
+        var convConfig = {"siteId":"356396","articleId":"485943391","el":"livefyre","collectionMeta":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IkdpZnRzIGFtaWQgdGhlIGdyaW5kIiwidXJsIjpmYWxzZSwidGFncyI6IlwvcHJvdGVjdGVkIiwiY2hlY2tzdW0iOiIxMDY1NWM0MjM0YTQ3MDI4OTc3MmU5YjIyNDY3NmQxNCIsImFydGljbGVJZCI6IjQ4NTk0MzM5MSJ9.pm7WPBWks0vLLAo4j56mGyxVmNnonux8ysN4bq_VjWs","datetimeFormat":{"minutesUntilAbsoluteTime":1,"absoluteFormat":"MMM. d, yy<br>h:mm a"}};
+        var commentLoginText = "Log in/register to comment";
+        var commentEmailOnly = 0;
+        var commentPage = {};
+        commentPage.userToken = null;
+        commentPage.userAuth = false;
+        commentPage.registerUsername = false;
+
+        commentPage.onCommentCountUpdated = function (number) {
+            commentCount.checkLivefyreLoaded(number);
+        };
+
+        var checkUserToken = function (cb) {
+            if (jQuery.cookie('st_usr_livefyre_token')) {
+                commentPage.userAuth = true;
+                commentPage.userToken = jQuery.cookie('st_usr_livefyre_token');
+            }
+            if (jQuery.cookie('register_st_user_name')) {
+                if (jQuery.cookie('st_usr_livefyre_token')) {
+                    jQuery.removeCookie('register_st_user_name');
+                } else {
+                    commentPage.registerUsername = true;
+                }
+            }
+            cb();
+        };
+
+        Livefyre.require(['fyre.conv#3', 'auth'], function(Conv, auth) {
+            var tokenCallback = function () {
+                if (commentPage.userToken) {
+                    auth.authenticate({livefyre: commentPage.userToken});
+                }
+
+                networkConfig["strings"] = {
+                    signIn: (commentPage.registerUsername ? "Please create a username for your account." : commentLoginText),
+                    postButton: "Post your comment",
+                    postReplyButton: "Post your comment",
+                    flagButton: "Report as inappropriate"
+                };
+
+                new Conv( networkConfig, [convConfig], function(commentsWidget){
+
+                    commentsWidget.on('commentCountUpdated', commentPage.onCommentCountUpdated);
+
+                    commentsWidget.on('initialRenderComplete', function () {
+                        jQuery('.fyre-comment a').contents().unwrap();
+                        commentCount.checkLivefyreLoaded(false, false);
+                    });
+                    commentsWidget.on('commentPosted', function (data) {
+                        userInteraction(['event9'], {'eVar94': '+1'}, 'Comment Posted');
+                    });
+                });
+
+                auth.delegate({
+                    login: function(cb) {
+                        if (commentPage.registerUsername) {
+                            window.location.href = 'https://users.startribune.com/';
+                        } else if (commentPage.userToken) {
+                            cb(null, {livefyre: commentPage.userToken});
+                        } else {
+                            window.location.href = 'https://' + document.domain + '/login?commentRedirect=true&path=' + encodeURIComponent( document.URL );
+                        }
+                    },
+                    viewProfile: function(user) {
+                        window.location.href = 'https://users.startribune.com/';
+                    }
+                });
+            };
+            if( $.cookie( 'check_livefyre_token_status' ) == true ) {
+                jQuery.ajax({
+                    method: 'POST',
+                    url: '//localhost:3000/login/livefyre/token/',
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    cache: false
+                }).always(function (data) {
+                    checkUserToken(tokenCallback);
+                });
+            } else {
+                checkUserToken(tokenCallback);
+            }
+        });
+
+    </script>
+    <div id='livefyre-cont'>
+        <div id='livefyre'>
+            <div class="comment-standards-mod">
+                <a href="#" class="comment-standards-btn js-show-comment-standards">Read our comment standards</a>
+                <div class="comment-standards-txt">
+                    <p>StarTribune.com welcomes and encourages readers to comment and engage in substantive, mutually
+                        respectful exchanges over news topics. Commenters must follow our <a
+                                href="http://www.startribune.com/terms/">Terms of Use</a>.</p>
+                    <ol>
+                        <li>Keep it civil and stay on topic.</li>
+                        <li>No profanity, vulgarity, racial slurs or personal attacks.</li>
+                        <li>Comments with web links are not permitted.</li>
+                        <li>Comments that violate the above will be removed. Repeat violators may lose their commenting
+                            privileges on StarTribune.com.
+                        </li>
+                    </ol>
+                    <p>Comments will be reviewed before being published.</p>
+                </div>
+                <!--eo comment-standards-txt-->
+            </div>
+            <!--eo comments-standards-mod-->
+            <!--LiveFyre gets injected here-->
+        </div>
+        <div id="powered_by_livefyre_new"><a href="http://livefyre.com/" target="_blank">Powered by Livefyre</a></div>
+        <img class="comments-image-tracking" style="height: 0px;" alt=""
+             src="http://apps.startribune.com/circulars/images/blank.gif"/>
+        <script type="text/javascript">
+        <!--if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')//-->
+        </script>
+        <noscript>
+                        <img src="http://metrics.startribune.com/b/ss/nmminneapolis/1/JS-2.9.0--NS/91497?pageName=Gifts%20amid%20the%20grind&channel=&server=startribune.com&c1=//localhost:3000/owtrail080318/485943391/&c2=Development&c3=comments&c5=noscript&c7=&c12=&c15=&c16=&c25=485943391&c64=&c71=websites"
+                 height="1" width="1" border="0" alt=""/>
+            }
+        </noscript>
+        <!--/DO NOT REMOVE/-->
+    </div>
+</section>
+                    
+                                    </div><!-- l-article-body -->
+            
+                    </div>
+
+        
+            </div><!-- l-article-container -->
+
+              
+    
+            <img class="trackerImage" src="http://apps.startribune.com/most_popular/?cmd=inc&amp;type=view&amp;section=%2Fprotected&amp;story_id=485943391">
+    
+	  </div>
+
+      <div class="l-footer-container">
+        <nav class="l-footer-inner" role="navigation">
+        <div class="footer-top-mod">
+            <a class="footer-branding-mod" href="//localhost:3000/"
+               data-linkname="StarTribune"
+               data-linktype="logo navigation"
+               data-modulename="Social Navigation Bottom"
+               data-moduletype="footer-page-nav"
+               data-position="1-1">
+                <h4 class="footer-st-branding">StarTribune</h4>
+            </a>
+            <div class="footer-social-mod">
+                <ul class="footer-social-links">
+                    <li>
+                        <span class="footer-social-links-label">Follow Us On:</span>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/startribune/" class="footer-social-facebook" target="_blank"
+                           data-linkname="Facebook"
+                           data-linktype="social navigation"
+                           data-modulename="Social Navigation Bottom"
+                           data-moduletype="footer-page-nav"
+                           data-position="1-2">
+                            Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/StarTribune/" class="footer-social-twitter" target="_blank"
+                           data-linkname="Twitter"
+                           data-linktype="social navigation"
+                           data-modulename="Social Navigation Bottom"
+                           data-moduletype="footer-page-nav"
+                           data-position="1-3">
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://plus.google.com/+startribune/" class="footer-social-gplus" target="_blank"
+                           data-linkname="Google+"
+                           data-linktype="social navigation"
+                           data-modulename="Social Navigation Bottom"
+                           data-moduletype="footer-page-nav"
+                           data-position="1-4">
+                            Google+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://pinterest.com/startribune/" class="footer-social-pinterest" target="_blank"
+                           data-linkname="Pinterest"
+                           data-linktype="social navigation"
+                           data-modulename="Social Navigation Bottom"
+                           data-moduletype="footer-page-nav"
+                           data-position="1-5">
+                            Pinterest
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.instagram.com/startribune/" class="footer-social-instagram" target="_blank"
+                           data-linkname="Instagram"
+                           data-linktype="social navigation"
+                           data-modulename="Social Navigation Bottom"
+                           data-moduletype="footer-page-nav"
+                           data-position="1-6">
+                            Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://startribune.tumblr.com/" class="footer-social-tumblr" target="_blank"
+                           data-linkname="Tumblr"
+                           data-linktype="social navigation"
+                           data-modulename="Social Navigation Bottom"
+                           data-moduletype="footer-page-nav"
+                           data-position="1-7">
+                            Tumblr
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-navigation-mod">
+                                        <div class="footer-navigation-col col-1">
+                                            <h4 class="footer-group-h">Company</h4>
+                                                    <ul class="footer-navigation-links">
+                                                                    <li>
+                                        <a href="//localhost:3000/about/"
+                                           data-linkname="About the Star Tribune"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-1">
+                                            About the Star Tribune
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/contactus/"
+                                           data-linkname="Contact us"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-2">
+                                            Contact us
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/workforus/"
+                                           data-linkname="Work For Us"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-3">
+                                            Work For Us
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/newspapersineducation/"
+                                           data-linkname="News in Education"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-4">
+                                            News in Education
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="http://www.citypages.com/"
+                                           data-linkname="City Pages"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-5">
+                                            City Pages
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/sports/preps/"
+                                           data-linkname="High school sports hubs"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-6">
+                                            High school sports hubs
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/NewsApps/"
+                                           data-linkname="Mobile and tablet apps"
+                                           data-linktype="company navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-7">
+                                            Mobile and tablet apps
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                            </div>
+                            <div class="footer-navigation-col col-2">
+                                            <h4 class="footer-group-h">Advertise with us</h4>
+                                                    <ul class="footer-navigation-links">
+                                                                    <li>
+                                        <a href="//localhost:3000/businessconsultant/"
+                                           data-linkname="Talk with a business consultant"
+                                           data-linktype="advertise navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-8">
+                                            Talk with a business consultant
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/mediakit/"
+                                           data-linkname="Media kit"
+                                           data-linktype="advertise navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-9">
+                                            Media kit
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/classified/"
+                                           data-linkname="Classifieds"
+                                           data-linktype="advertise navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-10">
+                                            Classifieds
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                            </div>
+                            <div class="footer-navigation-col col-3">
+                                            <h4 class="footer-group-h">Buy</h4>
+                                                    <ul class="footer-navigation-links">
+                                                                    <li>
+                                        <a href="//localhost:3000/store/"
+                                           data-linkname="Star Tribune Store"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-11">
+                                            Star Tribune Store
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/photoreprints/"
+                                           data-linkname="Photo Reprints"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-12">
+                                            Photo Reprints
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/archives/"
+                                           data-linkname="Archived articles"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-13">
+                                            Archived articles
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/fullpagearchives/"
+                                           data-linkname="Full Page Archive: 150+ years"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-14">
+                                            Full Page Archive: 150+ years
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/backcopies/"
+                                           data-linkname="Back Copies"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-15">
+                                            Back Copies
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/commercialreprints/"
+                                           data-linkname="Commercial reprints"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-16">
+                                            Commercial reprints
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/licensing/"
+                                           data-linkname="Licensing"
+                                           data-linktype="ecommerce navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-17">
+                                            Licensing
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                            </div>
+                            <div class="footer-navigation-col col-4">
+                                            <h4 class="footer-group-h">Customer support</h4>
+                                                    <ul class="footer-navigation-links">
+                                                                    <li>
+                                        <a href="//localhost:3000/feedback/"
+                                           data-linkname="Help and Feedback"
+                                           data-linktype="support navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-18">
+                                            Help and Feedback
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/membercenter/"
+                                           data-linkname="Manage your account"
+                                           data-linktype="support navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-19">
+                                            Manage your account
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/subscriptionservices/"
+                                           data-linkname="Newspaper subscription"
+                                           data-linktype="support navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-20">
+                                            Newspaper subscription
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/digitalaccess/"
+                                           data-linkname="Digital access"
+                                           data-linktype="support navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-21">
+                                            Digital access
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/eedition/"
+                                           data-linkname="eEdition"
+                                           data-linktype="support navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-22">
+                                            eEdition
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/subscriptionservices/"
+                                           data-linkname="Vacation hold/billing"
+                                           data-linktype="support navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-23">
+                                            Vacation hold/billing
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                            </div>
+                            <div class="footer-navigation-col col-5">
+                                            <h4 class="footer-group-h">Website</h4>
+                                                    <ul class="footer-navigation-links">
+                                                                    <li>
+                                        <a href="//localhost:3000/termsofuse/"
+                                           data-linkname="Terms of use"
+                                           data-linktype="website navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-24">
+                                            Terms of use
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/privacypolicy/"
+                                           data-linkname="Privacy policy"
+                                           data-linktype="website navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-25">
+                                            Privacy policy
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/siteindex/"
+                                           data-linkname="Site index"
+                                           data-linktype="website navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-26">
+                                            Site index
+                                        </a>
+                                    </li>
+                                                                    <li>
+                                        <a href="//localhost:3000/rssfeeds/"
+                                           data-linkname="RSS"
+                                           data-linktype="website navigation"
+                                           data-modulename="Page Navigation Bottom"
+                                           data-moduletype="footer-page-nav"
+                                           data-position="2-27">
+                                            RSS
+                                        </a>
+                                    </li>
+                                                            </ul>
+                                                            </div>
+                    </div>
+    </nav>
+</div>
+
+<div class="l-footer-container footer-copyright-mod">
+    <div class="l-footer-inner">
+        <p class="footer-copyright">&copy; 2018 StarTribune. All rights reserved.</p>
+    </div>
+</div>
+  
+  
+    <!-- 3rd party scripts -->
+    <script type="text/javascript" src="//localhost:3000/static/vendor/lodash/dist/lodash.min.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/jquery_appear/jquery.appear.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/fastclick/lib/fastclick.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/momentjs/min/moment.min.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/jquery-hoverIntent/jquery.hoverIntent.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/zeroclipboard/dist/ZeroClipboard.min.js?d=1523548612"></script>
+  <script type="text/javascript" src="//localhost:3000/static/vendor/Placeholders.js/dist/placeholders.min.js?d=1523548612"></script>
+  
+  <!-- our JS modules -->
+  <!-- <script type="text/javascript" src="//localhost:3000/static/js/ad.js"></script> -->
+
+  <!-- per-page JS modules -->
+  	
+	
+					<script>
+$('.accordionMenu').on('click', function() { $('.content').hide(); $(this).find('.content').show();
+});
+var figure = $(".tease").hover(hoverVideo, hideVideo); function hoverVideo(e) { $('video', this).get(0).play();
+} function hideVideo(e) { $('video', this).get(0).pause();
+}
+</script>
+<script>
+$(document).ready(function() { window.scrollTo(0, 0);
+});
+</script>
+
+    <!-- our JS controller -->
+    <script type="text/javascript" src="//localhost:3000/static/js/st.base.js?d=1530308087"></script>
+  <script type="text/javascript" src="//localhost:3000/static/js/st.navigation.js?d=1523463551"></script>
+  <script type="text/javascript" src="//localhost:3000/static/js/st.comments.js?d=1507743441"></script>
+  <script type="text/javascript" src="//localhost:3000/static/js/st.share.js?d=1523463551"></script>
+  <script type="text/javascript" src="//localhost:3000/static/js/st.tabs.js?d=1474911187"></script>
+  <script type="text/javascript" src="//localhost:3000/static/js/st.wide-image.js?d=1496334897"></script>
+
+  
+  <!-- housing page JS modules // this placement resolves script conflicts -->
+  
+  
+<!-- Start Omniture Tag -->
+    <script type="text/javascript" src="//localhost:3000/analytics-assets/sitecatalyst/StarTribunePageConfiguration.js?d=1531497061"></script>
+
+<script>
+
+    // Optimizely Adobe Analytics SiteCatalyst Integration code
+    window.optimizely = window.optimizely || [];
+    window.optimizely.push('activateSiteCatalyst');
+</script>
+<script type="text/javascript">
+    //Pageload Tracking
+                                        s.server = 'startribune.com';
+                                                            s.prop1 = 'D=g';
+                                                            s.prop2 = 'Development';
+                                
+            s.events = 'event31';
+                                                s.channel = '';
+                                                            s.eVar61 = '+1';
+                                                            s.prop22 = '1';
+                                                            s.prop23 = '';
+                                                            s.prop56 = '';
+                                                            s.prop7 = '';
+                                                            s.prop3 = 'story';
+                                                            s.prop4 = 'Star Tribune';
+                                                            s.prop11 = 'MWC';
+                                                            s.prop24 = 'article';
+                                                            s.prop25 = '485943391';
+                                                            s.prop35 = 'Melanie Radzicki McManus Star Tribune';
+                                                            s.prop45 = '5 PM';
+                                                            s.prop65 = 'August 01, 2018';
+                                                            s.prop74 = '31';
+                                                            s.prop75 = '17849';
+                                                            s.pageName = 'Gifts amid the grind';
+                                                            s.prop21 = 'Tokenized Article';
+                        
+        var storyExists = 'true';
+    var sidewaysEligible = 'false';
+
+    if(storyExists === 'true' && sidewaysEligible === 'true' && typeof referrerCheck !== 'undefined' && referrerCheck()) {
+        s.prop56 = "PerfectMarket";
+    }
+
+    if (typeof isUserGrazer === 'function') {
+        if(storyExists === 'true' && isUserGrazer() && window.segmentation.grazers) {
+            s.prop56 = 'Grazer';
+        }
+    }
+
+    
+    
+    //
+    // Special check for override templates to track whether they have ads
+    //
+
+    (function($, s) {
+
+        var adCount = 0;
+
+        //
+        // If we aren't on sideways, don't count those ads
+        // (Sideways ads are built client-side; the scaffolding always exists.)
+        //
+
+        if( typeof s.prop56 === 'undefined' || s.prop56 === '' ) {
+            var adDivs = $('.dfp-ad-container').not( '.sideways-ad' );
+        } else {
+            var adDivs = $('.dfp-ad-container');
+        }
+
+        for( var i = 0, j = adDivs.length; i < j; i++ ) {
+
+            //
+            // CSS is hiding ad, skip it
+            //
+
+            if( $(adDivs[i]).is(':hidden' ) ) {
+                continue;
+            }
+
+            //
+            // Don't count ads in the navigation bar
+            //
+
+            var adDivIdParts = adDivs[i].id.split('-');
+            var adNameParts = adDivIdParts.slice(4, adDivIdParts.length);
+            var adName = adNameParts.join('-');
+            if( $.inArray( adName, [ 'navtab', 'nav-flag' ] ) !== -1 ) {
+                continue;
+            }
+
+            //
+            // Whatever is left is a valid ad
+            //
+
+            adCount++;
+        }
+
+        s.prop54 = ( adCount > 0 ) ? 'Override Template Ads' : 'Override Template No Ads';
+
+    })(jQuery, s);
+
+    
+
+	if(isWelcomeShowing()){
+		s.prop21 = "Welcome Screen";
+	}
+
+    var s_code=s.t();if(s_code)document.write(s_code);
+
+    //Click Tracking
+    function userInteraction(events, vars, linkName) {
+        try {
+            s.linkTrackEvents = events.join(',');
+            s.events = s.linkTrackEvents;
+            s.linkTrackVars = 'events';
+            if (typeof vars === 'object') {
+                for (var key in vars) {
+                    if (vars.hasOwnProperty(key)) {
+                        s[key] = vars[key];
+                        s.linkTrackVars += ',' + key;
+                    }
+                }
+            }
+            s.tl(this, 'o', 'user interaction: ' + linkName);
+        } catch (e) {}
+    }
+
+    function trackClick( clickData ) {
+        var vars = {
+            'eVar44':'startribune.com',
+            'eVar45':clickData.modulename,
+            'eVar46':'D=pageName',
+            'eVar47':clickData.linkPosition,
+            'eVar48':clickData.linkname,
+            'eVar50':clickData.zonetype,
+            'eVar56':'homepage',
+            'eVar57':clickData.contentType,
+            'eVar58':clickData.linktype,
+            'eVar73':clickData.moduletype,
+            'eVar74':'story',
+            'eVar75':clickData.modulePosition
+        };
+
+        if (clickData.share) {
+            vars['eVar95'] = clickData.share;
+        }
+
+        userInteraction(clickData.events, vars, clickData.linkname );
+    }
+    $(document).ready(function() {
+        $(document).on('click', 'a, input[type=submit]', function() {
+            analyticsClickTracking( $(this) );
+
+            return true;
+        });
+
+        //to fix Adobe bug that grabs our custom vars (lnk_o) on the lnk_e tracking calls
+        $(document).on('click', '.article-share a', function() {
+            setTimeout(function() {
+                s.clearVars();
+            },1000)
+        });
+
+        if ( $('.fly-in').length > 0 ) {
+            // Add a data attribute to the meter fly-in so it will be detected by click tracking
+            $('.fly-in-start-btn').attr('data-linkname', 'fly-in');
+        }
+    });
+</script>
+<!-- End Omniture Tag -->
+
+
+<!-- Begin Chartbeat Tag -->
+<script type="text/javascript">
+    var _sf_async_config = _sf_async_config || {};
+    _sf_async_config.sections = s.channel;
+    _sf_async_config.authors = s.prop35;
+    _sf_async_config.virtualReferrer = getUserReferrer();
+    if ( typeof isHome !== 'undefined' &&
+        isHome &&
+        window.location.href.indexOf( 'refresh=true' ) > -1 &&
+        window.location.pathname === '/'
+    ) {
+        _sf_async_config.title = s.pageName;
+        _sf_async_config.sections = s.prop3;
+    }
+    var chartBeatAwesomeUser;
+    var segment = getAudienceSegmentType();
+
+    if ( segment == 'Intender' ) {
+        chartBeatAwesomeUser = 'lgdin';
+    }
+    else if ( segment == 'Test Driver' ) {
+        chartBeatAwesomeUser = 'anon';
+    }
+    else if ( segment == 'Subscriber' ) {
+        chartBeatAwesomeUser = 'paid';
+    }
+    var _cbq=window._cbq||[];
+    _cbq.push(['_acct',chartBeatAwesomeUser]);
+    (function(){
+        function loadChartbeat() {
+            window._sf_endpt = (new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src',
+                (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+                "js/chartbeat_video.js");
+            document.body.appendChild(e);
+        }
+        jQuery(function(){loadChartbeat();});
+    })();
+</script>
+<!-- End Chartbeat Tag -->
+
+
+
+                        
+    <!-- BEGIN:  Snowplow analytics -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var triedTimes = 1;
+            var tooManyTimes = 4;
+            var intervalId;
+            var delay = 500; // milliseconds
+
+            function displayNow() {
+                if ($.cookie("s_vi")) {
+                    return true;
+                }
+                return false;
+            }
+
+            var displaySnowplow = function() {
+                ;
+                (function (p, l, o, w, i, n, g) {
+                    if (!p[i]) {
+                        p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
+                        p.GlobalSnowplowNamespace.push(i);
+                        p[i] = function () {
+                            (p[i].q = p[i].q || []).push(arguments)
+                        };
+                        p[i].q = p[i].q || [];
+
+                        n = l.createElement(o);
+                        g = l.getElementsByTagName(o)[0];
+                        n.async = 1;
+                        n.src = w;
+                        g.parentNode.insertBefore(n, g);
+                    }
+                }(window, document, "script", "//localhost:3000/static/js/snowplow/sp.js?d=1474911187", "snowplow"));
+                var firstPageType = "";
+                if (!$.cookie('snowp_first_page_type')) {
+                    firstPageType = "story";
+                    $.cookie('snowp_first_page_type', firstPageType, {expires: 30, path: '/'}   );
+                } else {
+                    firstPageType = $.cookie('snowp_first_page_type');
+                    $.cookie('snowp_first_page_type', firstPageType, {expires: 30, path: '/'}   );
+                }
+                // Data Layer Object
+                var objDL = {
+                    getSegment: function () {
+                        // Return current Segment based on global variables
+                        if (getUserSubscriptionId() != "No DTI ID") {
+                            return 400;     // "Subscriber";
+                        } else if (this.getVisitDayCountNumberDaysUserVisitedPast30() == 1 &&    this.isFirstViewArticle()) {
+                            // First visit day count in past 30 days, enter on story/blog   page, non-subscriber
+                            return 100;     // "Grazer";
+                        } else if (this.getVisitDayCountNumberDaysUserVisitedPast30() < 5 ) {
+                            // Visit day count = 2 - 4, OR Visit day count = 1 AND enter non-   story/non-blog page
+                            return 200;     //"Test Driver";
+                        } else if (this.getVisitDayCountNumberDaysUserVisitedPast30() > 4) {
+                            //Visit day count = 5+
+                            return 300;     // "Intender";
+                        }
+                        return 0;       // Should not happen
+                    },
+                    isFirstViewArticle: function () {
+                        // Is/was the first page viewed an article (that is, page type ==   "story")?
+                        return (firstPageType == 'story');
+                    },
+                    getFirstPageType: function () {
+                        return firstPageType;
+                    },
+                    getAdobeId: function () {
+                        return $.cookie("s_vi") || 'No Adobe ID';
+                    },
+                    getContentArticleId: function () {
+                        return this.dataSet.contentArticleID;
+                    },
+                    getContentPageType: function () {
+                        return this.dataSet.contentPageType;
+                    },
+                    getContentAuthor: function () {
+                        return this.dataSet.contentAuthor;
+                    },
+                    getContentPubDate: function () {
+                        return this.dataSet.contentPubDate;
+                    },
+                    getContentSection: function () {
+                        return this.dataSet.contentSection;
+                    },
+                    getContentSubsection: function () {
+                        return this.dataSet.contentSubsection;
+                    },
+                    getCurrentUserSegment: function () {
+                        return this.getSegment();
+                    },
+                    getDtiId: function () {
+                        return getUserSubscriptionId();
+                    },
+                    getEmailAddress: function () {
+                        return this.dataSet.emailAddress;
+                    },
+                    getLoggedInStatus: function () {
+                        return this.dataSet.loggedInStatus;
+                    },
+                    getReferringDomain: function () {
+                        return document.referrer;
+                    },
+                    getSubscriptionType: function () {
+                        return $.cookie("st_usr_products");
+                    },
+                    getUserSubscriptionPurchases: function () {
+                        return $.cookie("meter_sign_up");
+                    },
+                    getUsername: function () {
+                        return this.dataSet.username;
+                    },
+                    getPagesViewed: function () {
+                        return this.userBehavior['pageviewed'];
+                    },
+                    getpageViewCount: function () {
+                        return this.userBehavior['pagecount'];
+                    },
+                    getVisitDayCountNumberDaysUserVisitedPast30: function () {
+                        return parseInt(window.visitDays30) || 0;
+                    },
+                    getLoginAccountId: function () {
+                        return $.cookie("st_usr_saml_id") || 'No Login Account ID';
+                    },
+                    dataSet: {
+                        contentPubDate: "August 01, 2018",
+                        contentSection: "",
+                        contentSubsection: "",
+                        contentAuthor: "Melanie Radzicki McManus Star Tribune",
+                        contentPageType: "story",
+                        contentArticleID: "485943391",
+                        username: "",
+                        dti_Id: "",
+                        emailAddress: "",
+                        loggedInStatus: "",
+                        referringDomain: "",
+                        pageName: "Gifts amid the grind"
+                    }
+                };
+                objDL.dataSet.firstPageType = $.cookie('snowp_first_page_type');
+                var snowplowData = {
+                    collectorURL: 'dxp61hcdssdi.cloudfront.net',
+                    dataSet: {}
+                };
+                snowplowData.dataSet.adobeId = objDL.getAdobeId();
+                snowplowData.dataSet.contentArticleId = objDL.getContentArticleId();
+                snowplowData.dataSet.contentArticleType = objDL.getContentPageType();
+                snowplowData.dataSet.contentAuthor = objDL.getContentAuthor();
+                snowplowData.dataSet.contentPubDate = objDL.getContentPubDate();
+                snowplowData.dataSet.contentSection = objDL.getContentSection();
+                snowplowData.dataSet.contentSubsection = objDL.getContentSubsection();
+                snowplowData.dataSet.currentUserSegment = objDL.getCurrentUserSegment();
+                snowplowData.dataSet.dtiId = objDL.getDtiId();
+                snowplowData.dataSet.emailAddress = objDL.getEmailAddress();
+                snowplowData.dataSet.loggedInStatus = objDL.getLoggedInStatus();
+                snowplowData.dataSet.referringDomain = objDL.getReferringDomain();
+                snowplowData.dataSet.subscriptionType = objDL.getSubscriptionType();
+                snowplowData.dataSet.username = objDL.getUsername();
+                snowplowData.dataSet.visitDayCountNumberDaysUserVisitedPast30 = objDL.  getVisitDayCountNumberDaysUserVisitedPast30();
+                snowplowData.dataSet.loginAccountId = objDL.getLoginAccountId();
+
+                window.snowplow('newTracker', 'co', snowplowData.collectorURL, { //     Initialize Snowplow tracker
+                    appId: 'startribune_web',
+                    platform: 'web',
+                    contexts: {
+                        webPage: true
+                    }
+                });
+                window.snowplow('enableActivityTracking', 5, 5); // Track time spent
+                window.snowplow('trackPageView', document.title, [ // Auto-set page title;  add page context
+                    {
+                        schema: "iglu:com.startribune/trackPageView/jsonschema/1-0-15",
+                        data: snowplowData.dataSet
+                    }
+                ]);
+
+                if (localStorageAvailable()) {
+                    var minutesSinceFetch = null;
+
+                    if (localStorage.getItem('visitorAndContentDataLastFetched')                    ) {
+                        var timeStampValue = localStorage.getItem(' visitorAndContentDataLastFetched');
+                        var lastDate = new Date(timeStampValue);
+                        var currentDate = new Date();
+                        minutesSinceFetch = Math.floor(Math.abs(lastDate - currentDate) /   60000);
+                    }
+                    if(minutesSinceFetch == null || minutesSinceFetch > 60)
+                    {
+                        $.get('//localhost:3000/api/personalize', function (data) {
+                            var jsonData = JSON.stringify(data);
+                            localStorage.setItem('visitorAndContentData', jsonData);
+                        });
+                        localStorage.setItem('visitorAndContentDataLastFetched', new Date());
+                    }
+                }
+            };
+
+            if (displayNow()) {
+                displaySnowplow();
+            }
+            else {
+                intervalId = setInterval(repeatThisFunction, delay);
+            }
+
+            function repeatThisFunction() {
+                triedTimes++;
+                if (triedTimes >= tooManyTimes || displayNow()) {
+                    clearInterval(intervalId);
+                    displaySnowplow();
+                }
+            }
+        });
+    </script>
+<!-- END: Snowplow analytics -->
+
+
+
+    
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KWTSNPP"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+	<script type="text/javascript">
+var reloadTimerLong = null;
+if(typeof reloadTimerActive === 'undefined') {
+  var reloadTimerActive = true;
+}
+reloadTimerLong = window.setTimeout(function() { if(reloadTimerActive) { window.location.reload(false); } } , 3600000 );
+</script>
+
+	 	  <script type="text/javascript">
+	          window._taboola = window._taboola || [];
+        _taboola.push({flush: true});
+      </script>
+      
+    
+<div id="react-js-append-modal"></div>
+
+<script type="text/javascript">
+    StarTribune.user.refreshProducts();
+</script>
+
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//localhost:3000/_debugbar/assets/stylesheets?v=1496339168'><script type='text/javascript' src='//localhost:3000/_debugbar/assets/javascript?v=1496339168'></script><script type="text/javascript">jQuery.noConflict(true);</script>
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelSQLQueriesWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.setDataMap({
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"emails": ["swiftmailer_mails.mails", []],
+"emails:badge": ["swiftmailer_mails.count", null],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar);
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"http:\/\/localhost:3000\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"5111f803d810909c1b0a9a4f9f198d46","datetime":"2018-08-02 14:37:30","utime":1533220650.3942,"method":"GET","uri":"\/owtrail080318\/485943391\/?preview=2","ip":"192.168.33.1"},"php":{"version":"7.0.24-1+ubuntu16.04.1+deb.sury.org+1","interface":"fpm-fcgi"},"messages":{"count":0,"messages":[]},"time":{"start":1533220648.5193,"end":1533220650.3942,"duration":1.8749251365662,"duration_str":"1.87s","measures":[{"label":"Booting","start":1533220648.5193,"relative_start":0,"end":1533220648.8337,"relative_end":1533220648.8337,"duration":0.31446504592896,"duration_str":"314.47ms","params":[],"collector":null},{"label":"Application","start":1533220648.7767,"relative_start":0.25747394561768,"end":1533220650.3942,"relative_end":1.9073486328125e-6,"duration":1.6174530982971,"duration_str":"1.62s","params":[],"collector":null}]},"memory":{"peak_usage":10485760,"peak_usage_str":"10MB"},"exceptions":{"count":4,"exceptions":[{"type":"Exception","message":"Cannot add listen to Queries for Laravel Debugbar: could not find driver","code":0,"file":"\/vagrant\/vendor\/barryvdh\/laravel-debugbar\/src\/LaravelDebugbar.php","line":338,"surrounding_lines":["                );\n","            } catch (\\Exception $e) {\n","                $this->addThrowable(\n","                    new Exception(\n","                        'Cannot add listen to Queries for Laravel Debugbar: ' . $e->getMessage(),\n","                        $e->getCode(),\n","                        $e\n"]},{"type":"PDOException","message":"could not find driver","code":0,"file":"\/vagrant\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connectors\/Connector.php","line":55,"surrounding_lines":["        $password = Arr::get($config, 'password');\n","\n","        try {\n","            $pdo = new PDO($dsn, $username, $password, $options);\n","        } catch (Exception $e) {\n","            $pdo = $this->tryAgainIfCausedByLostConnection(\n","                $e, $dsn, $username, $password, $options\n"]},{"type":"Exception","message":"Cannot add listen transactions to Queries for Laravel Debugbar: could not find driver","code":0,"file":"\/vagrant\/vendor\/barryvdh\/laravel-debugbar\/src\/LaravelDebugbar.php","line":369,"surrounding_lines":["                });\n","            } catch (\\Exception $e) {\n","                $this->addThrowable(\n","                    new Exception(\n","                        'Cannot add listen transactions to Queries for Laravel Debugbar: ' . $e->getMessage(),\n","                        $e->getCode(),\n","                        $e\n"]},{"type":"PDOException","message":"could not find driver","code":0,"file":"\/vagrant\/vendor\/laravel\/framework\/src\/Illuminate\/Database\/Connectors\/Connector.php","line":55,"surrounding_lines":["        $password = Arr::get($config, 'password');\n","\n","        try {\n","            $pdo = new PDO($dsn, $username, $password, $options);\n","        } catch (Exception $e) {\n","            $pdo = $this->tryAgainIfCausedByLostConnection(\n","                $e, $dsn, $username, $password, $options\n"]}]},"views":{"nb_templates":29,"templates":[{"name":"desktop-theme-tags::text (themes\/desktop-theme\/strib-tag\/text.twig)","param_count":3,"params":["analytics","type","data"],"type":"twig"},{"name":"desktop-theme-tags::image (themes\/desktop-theme\/strib-tag\/image.twig)","param_count":7,"params":["analytics","class","byline","scale","type","src","caption"],"type":"twig"},{"name":"desktop-theme-tags::image (themes\/desktop-theme\/strib-tag\/image.twig)","param_count":7,"params":["analytics","class","byline","scale","type","src","caption"],"type":"twig"},{"name":"desktop-theme-tags::image (themes\/desktop-theme\/strib-tag\/image.twig)","param_count":7,"params":["analytics","class","byline","scale","type","src","caption"],"type":"twig"},{"name":"desktop-theme-tags::text (themes\/desktop-theme\/strib-tag\/text.twig)","param_count":3,"params":["analytics","type","data"],"type":"twig"},{"name":"desktop-theme-tags::text (themes\/desktop-theme\/strib-tag\/text.twig)","param_count":3,"params":["analytics","type","data"],"type":"twig"},{"name":"desktop-theme-tags::gallery (themes\/desktop-theme\/strib-tag\/gallery.twig)","param_count":10,"params":["analytics","type","id","scale","readin","class","section","article","gallery","dartSlotString"],"type":"twig"},{"name":"components.media-gallery","param_count":33,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","analytics","type","id","scale","readin","class","section","article","gallery","dartSlotString","context_class","story","galleryWidth","galleryHeight"],"type":""},{"name":"override._id.485943391 (themes\/desktop-theme\/templates\/override\/_id\/485943391.twig)","param_count":13,"params":["subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message"],"type":"twig"},{"name":".override.superior-trail","param_count":32,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message"],"type":""},{"name":"components.article-share","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","moduleName","moduleType","modulePosition","zoneType"],"type":""},{"name":"article","param_count":34,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath"],"type":""},{"name":"base","param_count":35,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage"],"type":""},{"name":"includes.common-head-tags","param_count":37,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","bugsnag_api_key"],"type":""},{"name":"includes.sign-up-email-modal","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"js-data","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.ads-header","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.ad-vendors.amazon-header","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.ad-vendors.amazon-targeting","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.ad-vendors.bounce-x-grazers","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.ad-premium.interstitial","param_count":37,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","ad"],"type":""},{"name":"components.ad-premium.hover","param_count":37,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","ad"],"type":""},{"name":"components.analytics-header","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.article-body-text","param_count":42,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","useRecommendations","recommendationModel","moduleType","zoneType","modulePosition","articleContentTop"],"type":""},{"name":"components.article-comments","param_count":41,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","useRecommendations","recommendationModel","moduleType","zoneType","modulePosition"],"type":""},{"name":"navigation.footer","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"components.analytics-footer","param_count":36,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads"],"type":""},{"name":"snowplow","param_count":37,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","pageConfigFilename"],"type":""},{"name":"includes.common-footer","param_count":37,"params":["__env","app","weather","main_nav","section_nav","subsection_nav","footer_nav","top_level_domain","currentUrl","packageFolder","server","serverProtocol","httpRequestType","serverURL","dateFormat","dateTimeZone","year","feature","errors","subdomain","first_sentence","story","recirculation","zone_3","sidewaysParam","grazersParam","ad_config","metered","analytics","section","noAnalytics","adblock_message","sharing","imgIxPath","ogImage","ads","recentSection"],"type":""}]},"route":{"uri":"GET {articleSlug}\/{id}","middleware":"check.id, check.device, force.nossl, check.urlSlashes, remove.sessionCookie, check.subdomain","as":"content","controller":"StarTribune\\Http\\Controllers\\ContentController@article","namespace":"StarTribune\\Http\\Controllers","prefix":null,"where":[],"file":"app\/Http\/Controllers\/ContentController.php:35-204"},"queries":{"nb_statements":0,"nb_failed_statements":0,"accumulated_duration":0,"accumulated_duration_str":"0\u03bcs","statements":[]},"swiftmailer_mails":{"count":0,"mails":[]},"session":{"_token":"b3SNf6TRefiYlPuoUCXxfBNx2uIBa9pgz3kTs5X3","PHPDEBUGBAR_STACK_DATA":"[]"},"request":{"format":"html","content_type":"text\/html; charset=UTF-8","status_text":"OK","status_code":"200","request_query":"array:1 [\n  \"preview\" => \"2\"\n]","request_request":"array:1 [\n  \"preview\" => \"2\"\n]","request_headers":"array:10 [\n  \"host\" => array:1 [\n    0 => \"localhost:3000\"\n  ]\n  \"connection\" => array:1 [\n    0 => \"close\"\n  ]\n  \"upgrade-insecure-requests\" => array:1 [\n    0 => \"1\"\n  ]\n  \"user-agent\" => array:1 [\n    0 => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/67.0.3396.99 Safari\/537.36\"\n  ]\n  \"accept\" => array:1 [\n    0 => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\"\n  ]\n  \"accept-encoding\" => array:1 [\n    0 => \"identity\"\n  ]\n  \"accept-language\" => array:1 [\n    0 => \"en-US,en;q=0.9,la;q=0.8\"\n  ]\n  \"cookie\" => array:1 [\n    0 => \"dt=Thu Aug 02 2018; optimizelyEndUserId=oeu1524241182906r0.20931019888657265; _cb_ls=1; __qca=P0-129286932-1524241183045; __utmc=111872281; __utmz=111872281.1527006125.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); click_mobile=0; s_cc=true; snowp_first_page_type=story; OX_plg=swf|shk|pm; section=Eat & Drink; sectionPath=castle-danger-s-path-to-the-championship\/476413283; sectionInfo={\"ids\":[],\"path\":\"castle-danger-s-path-to-the-championship\/476413283\"}; packageId=476413283; timestamp=1527787544; SLStatUid=0_1530030878859_4199111; SLStatHist=%7C959595; sectionIndex=1; landOnArticle=1; interstitialShown=1; _v__chartbeat3=fIw4KBvMSFEDnl6aa; dt=Tue Jul 10 2018; recentVisits=7-12-2018; _ga=GA1.1.2143381848.1531430866; rec_sections=[{\"name\":\"Outdoors\",\"path\":\"\/sports\/outdoors\",\"subdomain\":\"www\",\"linkdomain\":\"startribune.com\"}]; s_fid=502959C55BBA5B10-39A887ED29AFE3DD; _cb=CIqRR3DhJDB-BVM06J; __utma=111872281.418788594.1527006125.1530825709.1531867594.12; targetList=sports,outdoors,; articleId=485943941; clickCounter=15; GED_PLAYLIST_ACTIVITY=W3sidSI6Ii9vTm8iLCJ0c2wiOjE1MzI5OTAyMjYsIm52IjoxLCJ1cHQiOjE1MzI5OTAyMDUsImx0IjoxNTMyOTkwMjI1fV0.; trc_cookie_storage=taboola%2520global%253Auser-id%3Decee43d8-6a1f-4fa4-ba67-f1281674a85e-tuct1aafbb4; s_sq=%5B%5BB%5D%5D; recentVisits=7-12-2018,8-2-2018; s_vnum=1535778000268%26vn%3D18; s_invisit=true; undefined_s=First%20Visit; omniture_p3=story; _sp_ses.1fff=*; _cb_svref=http%3A%2F%2Flocalhost%3A3000%2Fmeet-the-storytellers%2F486590301%2F; omniture_pn=Gifts%20amid%20the%20grind; omniture_ch=no%20value; omniture_p7=no%20value; io=ujbqiVKb4KDc4JV3AAB3; _chartbeat2=.1477324764702.1533220641778.1100000000001111.D9_mUCMo7KNBozeNoBuoHFxLzWFt.4; s_nr=1533220642597-Repeat; laravel_session=eyJpdiI6Im15TWJOSjJ1U3ZDSHcwZlwvVnh0VUp3PT0iLCJ2YWx1ZSI6ImNBV0o1dzZ1VDVxQ0V4WURjTEtIU1g2NklSU1dTUnNLZHh6alpieWxOZjVEbHcyQTd6UDdYM09wc1BmXC9XcGZKaGxZazFhRnkrRE1PT25IanpZYWhidz09IiwibWFjIjoiYWZjZDM4YzI0MTZkNjcxNTgxZDRlZWMwODdkNGMzZTMxMzZlYzc1ODllOWVhZWY2M2RkZTk1YWE5NTlkMmZjMCJ9; _sp_id.1fff=dc59fc24-a262-4081-94b0-c4e23bd53dfc.1531430873.54.1533220648.1533214694.7977f7ef-7948-4022-9f19-1768d04bc8a0; s_ppvl=Feeling%2520Superior%253A%2520Meet%2520the%2520writer%2520and%2520photographer%2C22%2C22%2C1160%2C1495%2C794%2C1920%2C1200%2C1%2CP; s_ppv=Gifts%2520amid%2520the%2520grind%2C57%2C57%2C3629%2C1495%2C794%2C1920%2C1200%2C1%2CP\"\n  ]\n  \"content-length\" => array:1 [\n    0 => \"\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"\"\n  ]\n]","request_server":"array:33 [\n  \"USER\" => \"www-data\"\n  \"HOME\" => \"\/var\/www\"\n  \"HTTP_HOST\" => \"localhost:3000\"\n  \"HTTP_CONNECTION\" => \"close\"\n  \"HTTP_UPGRADE_INSECURE_REQUESTS\" => \"1\"\n  \"HTTP_USER_AGENT\" => \"Mozilla\/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/67.0.3396.99 Safari\/537.36\"\n  \"HTTP_ACCEPT\" => \"text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\"\n  \"HTTP_ACCEPT_ENCODING\" => \"identity\"\n  \"HTTP_ACCEPT_LANGUAGE\" => \"en-US,en;q=0.9,la;q=0.8\"\n  \"HTTP_COOKIE\" => \"dt=Thu Aug 02 2018; optimizelyEndUserId=oeu1524241182906r0.20931019888657265; _cb_ls=1; __qca=P0-129286932-1524241183045; __utmc=111872281; __utmz=111872281.1527006125.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); click_mobile=0; s_cc=true; snowp_first_page_type=story; OX_plg=swf|shk|pm; section=Eat & Drink; sectionPath=castle-danger-s-path-to-the-championship\/476413283; sectionInfo={\"ids\":[],\"path\":\"castle-danger-s-path-to-the-championship\/476413283\"}; packageId=476413283; timestamp=1527787544; SLStatUid=0_1530030878859_4199111; SLStatHist=%7C959595; sectionIndex=1; landOnArticle=1; interstitialShown=1; _v__chartbeat3=fIw4KBvMSFEDnl6aa; dt=Tue Jul 10 2018; recentVisits=7-12-2018; _ga=GA1.1.2143381848.1531430866; rec_sections=[{\"name\":\"Outdoors\",\"path\":\"\/sports\/outdoors\",\"subdomain\":\"www\",\"linkdomain\":\"startribune.com\"}]; s_fid=502959C55BBA5B10-39A887ED29AFE3DD; _cb=CIqRR3DhJDB-BVM06J; __utma=111872281.418788594.1527006125.1530825709.1531867594.12; targetList=sports,outdoors,; articleId=485943941; clickCounter=15; GED_PLAYLIST_ACTIVITY=W3sidSI6Ii9vTm8iLCJ0c2wiOjE1MzI5OTAyMjYsIm52IjoxLCJ1cHQiOjE1MzI5OTAyMDUsImx0IjoxNTMyOTkwMjI1fV0.; trc_cookie_storage=taboola%2520global%253Auser-id%3Decee43d8-6a1f-4fa4-ba67-f1281674a85e-tuct1aafbb4; s_sq=%5B%5BB%5D%5D; recentVisits=7-12-2018,8-2-2018; s_vnum=1535778000268%26vn%3D18; s_invisit=true; undefined_s=First%20Visit; omniture_p3=story; _sp_ses.1fff=*; _cb_svref=http%3A%2F%2Flocalhost%3A3000%2Fmeet-the-storytellers%2F486590301%2F; omniture_pn=Gifts%20amid%20the%20grind; omniture_ch=no%20value; omniture_p7=no%20value; io=ujbqiVKb4KDc4JV3AAB3; _chartbeat2=.1477324764702.1533220641778.1100000000001111.D9_mUCMo7KNBozeNoBuoHFxLzWFt.4; s_nr=1533220642597-Repeat; laravel_session=eyJpdiI6Im15TWJOSjJ1U3ZDSHcwZlwvVnh0VUp3PT0iLCJ2YWx1ZSI6ImNBV0o1dzZ1VDVxQ0V4WURjTEtIU1g2NklSU1dTUnNLZHh6alpieWxOZjVEbHcyQTd6UDdYM09wc1BmXC9XcGZKaGxZazFhRnkrRE1PT25IanpZYWhidz09IiwibWFjIjoiYWZjZDM4YzI0MTZkNjcxNTgxZDRlZWMwODdkNGMzZTMxMzZlYzc1ODllOWVhZWY2M2RkZTk1YWE5NTlkMmZjMCJ9; _sp_id.1fff=dc59fc24-a262-4081-94b0-c4e23bd53dfc.1531430873.54.1533220648.1533214694.7977f7ef-7948-4022-9f19-1768d04bc8a0; s_ppvl=Feeling%2520Superior%253A%2520Meet%2520the%2520writer%2520and%2520photographer%2C22%2C22%2C1160%2C1495%2C794%2C1920%2C1200%2C1%2CP; s_ppv=Gifts%2520amid%2520the%2520grind%2C57%2C57%2C3629%2C1495%2C794%2C1920%2C1200%2C1%2CP\"\n  \"REDIRECT_STATUS\" => \"200\"\n  \"SERVER_NAME\" => \"vm-m.startribune.com\"\n  \"SERVER_PORT\" => \"80\"\n  \"SERVER_ADDR\" => \"192.168.33.99\"\n  \"REMOTE_PORT\" => \"54386\"\n  \"REMOTE_ADDR\" => \"192.168.33.1\"\n  \"SERVER_SOFTWARE\" => \"nginx\/1.12.1\"\n  \"GATEWAY_INTERFACE\" => \"CGI\/1.1\"\n  \"REQUEST_SCHEME\" => \"http\"\n  \"SERVER_PROTOCOL\" => \"HTTP\/1.1\"\n  \"DOCUMENT_ROOT\" => \"\/vagrant\/public\"\n  \"DOCUMENT_URI\" => \"\/index.php\"\n  \"REQUEST_URI\" => \"\/owtrail080318\/485943391\/?preview=2\"\n  \"SCRIPT_NAME\" => \"\/index.php\"\n  \"CONTENT_LENGTH\" => \"\"\n  \"CONTENT_TYPE\" => \"\"\n  \"REQUEST_METHOD\" => \"GET\"\n  \"QUERY_STRING\" => \"preview=2\"\n  \"SCRIPT_FILENAME\" => \"\/vagrant\/public\/index.php\"\n  \"FCGI_ROLE\" => \"RESPONDER\"\n  \"PHP_SELF\" => \"\/index.php\"\n  \"REQUEST_TIME_FLOAT\" => 1533220648.5193\n  \"REQUEST_TIME\" => 1533220648\n]","request_cookies":"array:49 [\n  \"dt\" => null\n  \"optimizelyEndUserId\" => null\n  \"_cb_ls\" => null\n  \"__qca\" => null\n  \"__utmc\" => null\n  \"__utmz\" => null\n  \"click_mobile\" => null\n  \"s_cc\" => null\n  \"snowp_first_page_type\" => null\n  \"OX_plg\" => null\n  \"section\" => null\n  \"sectionPath\" => null\n  \"sectionInfo\" => null\n  \"packageId\" => null\n  \"timestamp\" => null\n  \"SLStatUid\" => null\n  \"SLStatHist\" => null\n  \"sectionIndex\" => null\n  \"landOnArticle\" => null\n  \"interstitialShown\" => null\n  \"_v__chartbeat3\" => null\n  \"recentVisits\" => null\n  \"_ga\" => null\n  \"rec_sections\" => null\n  \"s_fid\" => null\n  \"_cb\" => null\n  \"__utma\" => null\n  \"targetList\" => null\n  \"articleId\" => null\n  \"clickCounter\" => null\n  \"GED_PLAYLIST_ACTIVITY\" => null\n  \"trc_cookie_storage\" => null\n  \"s_sq\" => null\n  \"s_vnum\" => null\n  \"s_invisit\" => null\n  \"undefined_s\" => null\n  \"omniture_p3\" => null\n  \"_sp_ses_1fff\" => null\n  \"_cb_svref\" => null\n  \"omniture_pn\" => null\n  \"omniture_ch\" => null\n  \"omniture_p7\" => null\n  \"io\" => null\n  \"_chartbeat2\" => null\n  \"s_nr\" => null\n  \"laravel_session\" => \"8fa80000007053e818d0a5c91f64270cc60d75ca\"\n  \"_sp_id_1fff\" => null\n  \"s_ppvl\" => null\n  \"s_ppv\" => null\n]","response_headers":"array:3 [\n  \"cache-control\" => array:1 [\n    0 => \"no-cache\"\n  ]\n  \"date\" => array:1 [\n    0 => \"Thu, 02 Aug 2018 14:37:30 GMT\"\n  ]\n  \"content-type\" => array:1 [\n    0 => \"text\/html; charset=UTF-8\"\n  ]\n]","path_info":"\/owtrail080318\/485943391\/","session_attributes":"array:2 [\n  \"_token\" => \"b3SNf6TRefiYlPuoUCXxfBNx2uIBa9pgz3kTs5X3\"\n  \"PHPDEBUGBAR_STACK_DATA\" => []\n]"}}, "5111f803d810909c1b0a9a4f9f198d46");
+
+</script>
+</body>
+</html>
+
+

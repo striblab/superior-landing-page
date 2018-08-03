@@ -1,0 +1,109 @@
+<style>
+  .myWrapper {
+  position: relative;
+  padding-bottom: 54%;
+  /*padding-top: 20px;*/
+  height: 0;
+  z-index: 5;
+}
+
+.myWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.strib-styles.ssa.ssb.ssc #heroVideo {
+  /*  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  display: block;*/
+  opacity: 1;
+  animation: none;
+  z-index: 15;
+  /* background: pink;*/
+}
+
+.strib-styles.ssa.ssb.ssc .hero {
+
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ededed;
+  opacity: 0;
+  animation: introFade 3s 2s ease-out forwards;
+  @media (max-width: 769px) {
+    height: 60vh;
+  }
+
+</style>
+<div class="strib-styles ssa ssb ssc">
+  <section class="hero" id="hero">
+    <div class="topNavBar">
+      <a href="http://www.startribune.com">
+        <div class="strib"></div>
+      </a>
+      <div class="sponsor">
+      </div>
+    </div>
+    <div class="title-card">
+      <a href="/485943941"><h1>TEST Feeling Superior</h1></a>
+      <button class="go">fadeToggle video1</button>
+    </div>
+    <video autoplay="autoplay" muted loop="loop" id="heroVideo">
+      <source src="http://static.startribune.com/video/HERO-preview1.mp4" type="video/mp4">
+    </video>
+    <div class="myWrapper">
+      <iframe src="http://www.startribune.com/video/embed/486599311/?load_location=Article&amp;article_title=Activists%20vow%20resistance%20against%20Enbridge%20pipeline%20project&amp;article_author=Nicole%20Norfleet&amp;embed_site=http%3A%2F%2Fvm-video.startribune.com&amp;page_level=Article&amp;auto_start=0&amp;section_name=Local&amp;secs=Local&amp;soft_load=0&amp;article_id=486879381&amp;enable_postroll=1&amp;controls=false&amp;stretch=fill&amp;no_ad=true&amp;no_watermark=true&amp;width=100vw&amp;height=100vh" id="articleVideo" name="stribVideoEmbed" class="heroVideo tease-video article-media__video" scrolling="no" horizontalscrolling="no" allowTransparency="true" verticalscrolling="no" webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder="0" wmode="transparent">
+      </iframe>
+    </div>
+  </section>
+  <section id="mobile-hero" class="mobile-hero mobile">
+    <div class="topNavBar">
+      <a href="http://www.startribune.com">
+        <div class="strib"></div>
+      </a>
+      <div class="sponsor">
+      </div>
+    </div>
+    <div class="title-card">
+      <a href="/485943941"><h1>Feeling Superior</h1></a>
+    </div>
+  </section>
+</div>
+<script>
+var figure = $(".tease").hover(hoverVideo, hideVideo);
+
+function hoverVideo(e) {
+  $('video', this).get(0).play();
+}
+
+function hideVideo(e) {
+  $('video', this).get(0).pause();
+}
+
+
+
+$(document).ready(function() {
+  console.log("first-hit");
+  $("#heroVideo").get(0).play();
+  $("button.go").click(function() {
+    console.log("hit");
+    var iframeWindow = $('.heroVideo')[0].contentWindow;
+    iframeWindow._iw.loadStribVideoPlayer();
+    $("#heroVideo").fadeToggle("slow", "linear");
+    iframeWindow.jwplayer().play();
+  });
+
+});
+
+</script>
