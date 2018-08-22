@@ -1,17 +1,29 @@
-
 .myWrapper {
   position: relative;
-  padding-bottom: 54%;
-  height: 0;
+  // padding-bottom: 54%;
+  min-height:100%;
   z-index: 5;
+  opacity: 0;
+  animation: introFade 3s 5s ease-out forwards;
+    @media (max-width: 767px) {
+    display:none;
+  }
 }
 
 .myWrapper iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 80vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto; 
+  // top: 0;
+  // left: 0;
+  // width: 100vw;
+  // height: 80vh;
 }
 
 #heroVideo {

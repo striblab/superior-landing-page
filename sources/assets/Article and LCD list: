@@ -3,9 +3,18 @@ Article and LCD list:
 test video preview
 488105501 LCD: 489905771
 
+TESTING 
+part3 sidebar1: 488105301
+LCD: 489905771
+
+CHANGE BACK TO: 
+	part3 sidebar1: 488105301/ version 12
+	LCD: 488619641 - version 17
+
 
 LIVE LCDs: need similar responsive bottoms
-preview: 486497291
+multimedia: 487259461
+preview: 486497291--
 bios: 487259751
 part1: 486498401
 part1 sidebar1: 488054551
@@ -14,9 +23,19 @@ part2: 486498461
 part2 sidebar: 488332031
 part3: 486498581
 part3 sidebar: 488619641
+part4: 486499151 
+part5: 486499411
+part5 sidebar: 490014401
+part6: 486499431
+part6 sidebar1: 491056901
+part6 sidebar2: 491067461
 
 
 ________________
+Superior Preview Video Test: 491068681 LCD: 489905771
+
+
+
 
 
 Preview: Fri, July 6 485943941: LCD  486497291 Preview
@@ -77,8 +96,11 @@ day 5 sidebar: 488105341 LCD: 490014401
 Part 6: Fri, Aug 17 Protect and serve: 485943721 : LCD  486499431
 http://www.startribune.com/owtrail081018/485943721/?preview=1
 
+Video: 486600651
 Photo Gallery: 488423951
 
+sidebar1: 488105391 LCD 491056901
+sidebar2: 488105501 LCD: 491067461
 
 485934211 Interactive Map LCD 485934531
 486590301 Bios  LCD 487259751
@@ -97,8 +119,8 @@ articles to make live
 488105081 sidebar4 - day2 sidebar
 488105301 sidebar5 - day3 sidebar
 488105341 sidebar6 - day5 sidebar
-488105391 sidebar7
-488105501 sidebar8
+488105391 sidebar7 - day6 sidebar1 moved over as 491043371 sidebar1
+488105501 sidebar8 - day6 sidebar2 - moved over as 491043381 sidebar2.OL from saxo
 
 gulp develop --cms --mobile --cms-id=485943941
 gulp develop --cms --cms-id=485943941
